@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b0b7e59ff02f346b7b9c5053d5753c0d
+timeCreated: 1467537928
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/Resources/SquareParticleAlphaBlend.mat
+  uploadId: 704274

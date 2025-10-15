@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0afdbba1a963da844a8a670917d49aad
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Shaders/Sprites-Diffuse.shader
+  uploadId: 704274

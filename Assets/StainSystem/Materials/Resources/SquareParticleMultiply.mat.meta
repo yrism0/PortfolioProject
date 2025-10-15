@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7aa9125c8a5674e089d904f40e16fcb3
+timeCreated: 1467812700
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/Resources/SquareParticleMultiply.mat
+  uploadId: 704274

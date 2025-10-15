@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9d6132b01a86c48eaa7a8526f4fc86c4
+timeCreated: 1466503702
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo2 - Platformer/Materials/PickupParticle.mat
+  uploadId: 704274

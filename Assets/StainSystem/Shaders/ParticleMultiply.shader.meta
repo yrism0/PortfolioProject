@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cfda45cb8084645aca6e0a5c970c49f0
+labels:
+- Blood
+- Effect
+- Paint
+- Splash
+- Stencil
+timeCreated: 1467811546
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Shaders/ParticleMultiply.shader
+  uploadId: 704274

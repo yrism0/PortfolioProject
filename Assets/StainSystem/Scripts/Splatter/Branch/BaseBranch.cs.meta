@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 39d53232de2cd4b01bad93c0e84ea577
+timeCreated: 1468568271
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Scripts/Splatter/Branch/BaseBranch.cs
+  uploadId: 704274

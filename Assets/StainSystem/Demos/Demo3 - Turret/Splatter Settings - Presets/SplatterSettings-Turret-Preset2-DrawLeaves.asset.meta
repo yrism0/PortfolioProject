@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f125fb145255040afa2e913b57479403
+timeCreated: 1467993829
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo3 - Turret/Splatter Settings - Presets/SplatterSettings-Turret-Preset2-DrawLeaves.asset
+  uploadId: 704274

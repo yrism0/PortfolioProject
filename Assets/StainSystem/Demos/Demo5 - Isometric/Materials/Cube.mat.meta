@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4dca5b1ddca4645b39b4a1f1b49f6470
+timeCreated: 1466680061
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo5 - Isometric/Materials/Cube.mat
+  uploadId: 704274

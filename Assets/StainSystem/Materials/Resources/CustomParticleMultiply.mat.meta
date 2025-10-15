@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 74050b9c3794445d08aa8d839066c42c
+timeCreated: 1467803148
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/Resources/CustomParticleMultiply.mat
+  uploadId: 704274

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bc2a3fccaa46d41878b6c3194113357d
+timeCreated: 1463829944
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/Resources/CircleParticleAlphaBlendCustom.mat
+  uploadId: 704274

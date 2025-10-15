@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e110f06fa230748dd90451422160610b
+timeCreated: 1467028337
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo4 - Top-Down/Splatter Settings - Presets/SplatterSettings-TopDown-Preset1-Kill.asset
+  uploadId: 704274

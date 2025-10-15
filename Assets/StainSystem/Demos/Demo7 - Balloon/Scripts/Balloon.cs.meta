@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 17cb8b9cdce6241ec9e896ad9bd7ed15
+timeCreated: 1468498085
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo7 - Balloon/Scripts/Balloon.cs
+  uploadId: 704274

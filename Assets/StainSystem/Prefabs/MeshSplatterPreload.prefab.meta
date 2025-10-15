@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 60144020c9fa34c9fa92932dfcfa9d7a
+timeCreated: 1469623359
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Prefabs/MeshSplatterPreload.prefab
+  uploadId: 704274

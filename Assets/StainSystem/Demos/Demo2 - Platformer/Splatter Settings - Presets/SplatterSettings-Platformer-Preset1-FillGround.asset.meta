@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6164c0892add14bb992d79969ef3a29f
+timeCreated: 1470306323
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo2 - Platformer/Splatter Settings - Presets/SplatterSettings-Platformer-Preset1-FillGround.asset
+  uploadId: 704274

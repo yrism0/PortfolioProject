@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 584d81a1d395a4feb8da785d73900c0e
+labels:
+- Blood
+- Effect
+- Paint
+- Splash
+- Stencil
+timeCreated: 1466166179
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Shaders/ParticleAlphaBlendFull.shader
+  uploadId: 704274

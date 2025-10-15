@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1aae8ad4134f44a4c92e269a3192bc23
+timeCreated: 1466501353
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo2 - Platformer/Scripts/LevelReset.cs
+  uploadId: 704274

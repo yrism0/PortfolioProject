@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d8ba3285389955c43836cfa870002045
+timeCreated: 1449457595
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Common/Scripts/MouseShooter.cs
+  uploadId: 704274

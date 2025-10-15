@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8540a48a839ea4d439006acccfcf550c
+labels:
+- Blood
+- Effect
+- Paint
+- Splash
+- Stencil
+timeCreated: 1466709730
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Shaders/StandardSurface.shader
+  uploadId: 704274

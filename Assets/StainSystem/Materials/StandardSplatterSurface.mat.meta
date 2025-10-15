@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f49cf6154bd734533951d07bad9ab6d8
+timeCreated: 1467809876
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/StandardSplatterSurface.mat
+  uploadId: 704274

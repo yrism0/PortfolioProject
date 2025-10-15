@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 841cf035de9ea4d0a89f1b81e27ebf7e
+timeCreated: 1467812690
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/Resources/CircleParticleMultiply.mat
+  uploadId: 704274

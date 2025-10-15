@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2903d95dbe5674142a302294279088dc
+timeCreated: 1468568857
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Prefabs/Resources/BitmapSplatterBranch.prefab
+  uploadId: 704274

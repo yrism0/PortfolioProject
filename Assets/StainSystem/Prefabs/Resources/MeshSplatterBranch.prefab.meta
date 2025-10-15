@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 72e15d9184f64475ebd60febd3229dfa
+timeCreated: 1467289059
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Prefabs/Resources/MeshSplatterBranch.prefab
+  uploadId: 704274

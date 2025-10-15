@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a81b6b6c3ca2f4540925c80deefa8e82
+timeCreated: 1468319823
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo6 - Pixel/Prefabs/SplatterPickup-PixelScene.prefab
+  uploadId: 704274

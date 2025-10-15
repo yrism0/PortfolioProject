@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: de7fa7dfdf74841a297937bc9e97adaf
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Shaders/URP/Sprite-Lit.shader
+  uploadId: 704274

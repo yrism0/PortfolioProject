@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 10f984f6bc0304b58bd2378a74a51c01
+timeCreated: 1468770440
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Prefabs/BitmapSplatterAreaSelective.prefab
+  uploadId: 704274

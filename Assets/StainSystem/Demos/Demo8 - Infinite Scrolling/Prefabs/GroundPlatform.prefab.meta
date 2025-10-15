@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0150cd112b36b4af6a419f02054dee92
+timeCreated: 1506314989
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo8 - Infinite Scrolling/Prefabs/GroundPlatform.prefab
+  uploadId: 704274

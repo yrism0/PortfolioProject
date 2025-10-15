@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 3217afcb489cb47a492668ae02ce8b4b
+timeCreated: 1506315019
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo8 - Infinite Scrolling/Scripts/InfiniteScroller.cs
+  uploadId: 704274

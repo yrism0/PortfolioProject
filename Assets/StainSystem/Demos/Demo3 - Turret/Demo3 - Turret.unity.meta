@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8b21d14371309409eab30f0ddb30bd16
+timeCreated: 1466426756
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo3 - Turret/Demo3 - Turret.unity
+  uploadId: 704274

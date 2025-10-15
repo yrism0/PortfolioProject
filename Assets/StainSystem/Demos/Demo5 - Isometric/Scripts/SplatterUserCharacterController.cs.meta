@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5ac8c776dd40840e4a284f68b442297b
+timeCreated: 1466682083
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo5 - Isometric/Scripts/SplatterUserCharacterController.cs
+  uploadId: 704274

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9f05f3d0e703f4f0d8ac71288561e3bb
+timeCreated: 1466498871
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo2 - Platformer/Physic Materials/Boxes.physicsMaterial2D
+  uploadId: 704274

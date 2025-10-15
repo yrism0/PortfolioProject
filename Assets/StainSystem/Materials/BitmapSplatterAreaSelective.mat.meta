@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ae3e0a3db9b2a40909eb7c7dc2012969
+timeCreated: 1468770359
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Materials/BitmapSplatterAreaSelective.mat
+  uploadId: 704274

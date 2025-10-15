@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6899500e34e0e4c36b78767ed4c74256
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Shaders/Lit.shader
+  uploadId: 704274

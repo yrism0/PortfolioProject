@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e0ccc1d4201a34619b786b4852d93754
+timeCreated: 1466680069
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67146
+  packageName: Stain System
+  packageVersion: 2.0.5
+  assetPath: Assets/StainSystem/Demos/Demo5 - Isometric/Materials/Plane.mat
+  uploadId: 704274
