@@ -54,17 +54,17 @@ namespace SplatterSystem.Platformer {
         void FixedUpdate() {
             // Add acceleration.
             float a = groundState.IsGround() ? acceleration : airAcceleration;
-            rb.AddForce(new Vector2(((input.x*speed) - rb.velocity.x)*a, 0f));
+            rb.AddForce(new Vector2(((input.x*speed) - rb.linearVelocity.x)*a, 0f));
             // Stop or move player.
-            float vx = (Math.Abs(input.x) < float.Epsilon && groundState.IsGround()) ? 0 : rb.velocity.x;
+            float vx = (Math.Abs(input.x) < float.Epsilon && groundState.IsGround()) ? 0 : rb.linearVelocity.x;
             // Jump from ground.
-            float vy = (Math.Abs(input.y - 1) < float.Epsilon && groundState.IsTouching()) ? jumpPower : rb.velocity.y;
-            rb.velocity = new Vector2(vx, vy);
+            float vy = (Math.Abs(input.y - 1) < float.Epsilon && groundState.IsTouching()) ? jumpPower : rb.linearVelocity.y;
+            rb.linearVelocity = new Vector2(vx, vy);
 
             // Wall jump.
             if (groundState.IsWall() && !groundState.IsGround() && Math.Abs(input.y - 1) < float.Epsilon) {
                 //Add force negative to wall direction (with speed reduction).
-                rb.velocity = new Vector2(-groundState.WallDirection()*speed*wallPushPower, rb.velocity.y);
+                rb.linearVelocity = new Vector2(-groundState.WallDirection()*speed*wallPushPower, rb.linearVelocity.y);
             }
 
             input.y = 0;

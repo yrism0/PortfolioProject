@@ -23,7 +23,7 @@ namespace SplatterSystem.TopDown {
         }
 
         void FixedUpdate() {
-            rb.AddForce(((input*speed) - rb.velocity) * acceleration);
+            rb.AddForce(((input*speed) - rb.linearVelocity) * acceleration);
         }
     }
 
