@@ -11,6 +11,9 @@ namespace TopDown.Shooting
         private Rigidbody2D body;
         private float lifeTimer;
 
+        [Header("Bullet FX")]
+        [SerializeField] private GameObject impactEffect;
+
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
@@ -31,7 +34,16 @@ namespace TopDown.Shooting
         {
             lifeTimer += Time.deltaTime;
             if (lifeTimer >= lifetime)
-                gameObject.SetActive(false);
+                Destroy(gameObject);
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag != "Player")
+            {
+                Instantiate(impactEffect, transform.transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
         }
     }
 

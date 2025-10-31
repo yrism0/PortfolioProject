@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 55b540bf8e7fe264489f85ad54b2a263
+guid: 067838f5d46ddb74b9920921a3f5e08d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5185122941673105928
-    second: TestTilesheet_0
+      213: -2580641155155601224
+    second: PC-BigBulletConcept_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 63.8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TestTilesheet_0
+      name: PC-BigBulletConcept_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
+        x: 2
+        y: 0
+        width: 12
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f598d0182eba08b0800000000000000
-      internalID: -5185122941673105928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TestTilesheet_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85f8e41000f798142a741d9df643105b
-      internalID: -498609891
+      spriteID: 8b8523eca88bf2cd0800000000000000
+      internalID: -2580641155155601224
       vertices: []
       indices: 
       edges: []
@@ -147,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6df966e5639fbd143abb1e73aad44377
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -157,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TestTilesheet_0: -5185122941673105928
-      TestTilesheet_1: -498609891
+      PC-BigBulletConcept_0: -2580641155155601224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
