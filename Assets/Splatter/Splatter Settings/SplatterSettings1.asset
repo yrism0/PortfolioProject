@@ -18,7 +18,7 @@ MonoBehaviour:
   directionReference: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
   orientation: 0
-  numBranchesMean: 1.5
+  numBranchesMean: 2
   numBranchesVariance: 1.5
   branchChildrenMean: 6
   branchChildrenVariance: 2.5
@@ -33,17 +33,18 @@ MonoBehaviour:
   damping: 0.3
   colorMode: 1
   startColor: {r: 1, g: 0.100588456, b: 0, a: 1}
-  colors: []
+  colors:
+  - {r: 0.120666504, g: 1, b: 0, a: 0}
   multiplyColor: 0
   fadeOutBranches: 0
   brightnessVariation: 0.1
   hueVariation: 0
   saturationVariation: 0
-  particleMode: 0
-  particleTexture: {fileID: 2800000, guid: 84e508a4278ca4c01a3fb6af78609661, type: 3}
+  particleMode: 2
+  particleTexture: {fileID: 2800000, guid: 74303a3f542a94914bcd5193961cd78f, type: 3}
   particleMaterial: {fileID: 0}
   maxParticles: 12000
   removeParticles: 0
   particleLifetime: 10
   fadeOutSpeed: 0.1
-  sortingLayerName: Default
+  sortingLayerName: Splatter
