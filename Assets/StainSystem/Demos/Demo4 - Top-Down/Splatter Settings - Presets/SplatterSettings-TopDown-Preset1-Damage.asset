@@ -18,11 +18,11 @@ MonoBehaviour:
   directionReference: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
   orientation: 0
-  numBranchesMean: 10.6
+  numBranchesMean: 1
   numBranchesVariance: 1.5
-  branchChildrenMean: 9.36
+  branchChildrenMean: 1
   branchChildrenVariance: 2.5
-  scaleMean: 5
+  scaleMean: 0.1
   scaleVariance: 0.1
   scaleMin: 0.1
   centerPositionRange: 0.4
@@ -32,17 +32,17 @@ MonoBehaviour:
   stepDuration: 0.01
   damping: 0.3
   colorMode: 1
-  startColor: {r: 1, g: 0.06392128, b: 0, a: 1}
+  startColor: {r: 0.14285529, g: 1, b: 0, a: 1}
   colors: []
   multiplyColor: 1
-  fadeOutBranches: 0
-  brightnessVariation: 0.5
-  hueVariation: 0.5
+  fadeOutBranches: 1
+  brightnessVariation: 0
+  hueVariation: 0
   saturationVariation: 0
   particleMode: 0
   particleTexture: {fileID: 0}
   particleMaterial: {fileID: 0}
-  maxParticles: 12000
+  maxParticles: 100
   removeParticles: 0
   particleLifetime: 10
   fadeOutSpeed: 0.1

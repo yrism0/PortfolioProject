@@ -18,13 +18,13 @@ MonoBehaviour:
   directionReference: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
   orientation: 0
-  numBranchesMean: 10
+  numBranchesMean: 1.5
   numBranchesVariance: 1.5
-  branchChildrenMean: 10
+  branchChildrenMean: 6
   branchChildrenVariance: 2.5
-  scaleMean: 5
+  scaleMean: 2
   scaleVariance: 0.1
-  scaleMin: 0.1
+  scaleMin: 0.641
   centerPositionRange: 0.4
   randomRotation: 0
   moveSpeedMean: 0.5
@@ -40,7 +40,7 @@ MonoBehaviour:
   hueVariation: 0
   saturationVariation: 0
   particleMode: 0
-  particleTexture: {fileID: 0}
+  particleTexture: {fileID: 2800000, guid: 84e508a4278ca4c01a3fb6af78609661, type: 3}
   particleMaterial: {fileID: 0}
   maxParticles: 12000
   removeParticles: 0
