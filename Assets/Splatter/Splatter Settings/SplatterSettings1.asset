@@ -35,7 +35,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 0.100588456, b: 0, a: 1}
   colors:
   - {r: 0.120666504, g: 1, b: 0, a: 0}
-  multiplyColor: 0
+  multiplyColor: 1
   fadeOutBranches: 0
   brightnessVariation: 0.1
   hueVariation: 0
