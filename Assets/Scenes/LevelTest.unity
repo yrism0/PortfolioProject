@@ -6681,8 +6681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982e934f543d1fc489ebb809d9f07960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeDuration: 1
-  start: 1
 --- !u!1 &545024806
 GameObject:
   m_ObjectHideFlags: 0
@@ -7291,7 +7289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb0e3f17db65e242acddee71a2cffae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iFrames: 2
+  playerInvincible: 0
   chipSpeed: 2
+  meterPause: 0
   heatMeter: {fileID: 789633482}
   healingBMeter: {fileID: 690073335}
 --- !u!114 &841300867

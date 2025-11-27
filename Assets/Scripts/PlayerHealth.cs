@@ -7,11 +7,17 @@ public class PlayerHealth : MonoBehaviour
 
     private float heatValue;
     private float maxHeatValue;
-    
+
+    [Header("Invincibility Frames")]
+    [SerializeField] private float iFrames;
+    private float iTime;
+    [SerializeField] private bool playerInvincible = false;
+    private CircleCollider2D playerCollider;
 
     private float lerpTimer;
     public float chipSpeed = 2f;
 
+    public bool meterPause;
     public Slider heatMeter;
     public Slider healingBMeter;
 
@@ -20,16 +26,31 @@ public class PlayerHealth : MonoBehaviour
     {
         maxHeatValue = 30f;
         heatValue = maxHeatValue;
-        
+        playerCollider = GetComponent<CircleCollider2D>();  
     }
 
     // Update is called once per frame
     void Update()
-    {        
+    {
+        if (playerInvincible == true)
+        {
+            iTime += Time.deltaTime;
+        }
+        
+
         heatValue = Mathf.Clamp(heatValue, 0 , maxHeatValue);
-        heatValue -= Time.deltaTime;
         UpdateHeatUI();
-        healingBMeter.value = heatMeter.value;
+        if (meterPause == false)
+        {
+            heatValue -= Time.deltaTime;
+        }
+        else
+        {
+            return;
+        }
+
+
+            healingBMeter.value = heatMeter.value;
 
 
         if (Input.GetKeyDown(KeyCode.K))
@@ -46,20 +67,40 @@ public class PlayerHealth : MonoBehaviour
     {
         heatMeter.value = heatValue;
         heatMeter.maxValue = maxHeatValue;
-
-        
+               
 
     }
 
     public void TakeDamage(float damage)
     {
-        heatValue -= damage;
-        lerpTimer = 0f;
+        if (playerInvincible == false)
+        {
+            heatValue -= damage;            
+            playerCollider.enabled = false;
+            playerInvincible = true;
+            if (iTime >= iFrames)
+            {
+                playerCollider.enabled = true;
+                playerInvincible = false;
+                iTime = 0;
+            }
+        }
+        else
+        {
+            return;
+        }
+        
+        
+        
     }
 
     public void RestoreHealth(float healAmount)
     {
         heatValue += healAmount;
-        lerpTimer = 0f;
+        
     }
+
+   
+    
+
 }
