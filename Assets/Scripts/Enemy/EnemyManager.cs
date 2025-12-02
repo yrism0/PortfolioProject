@@ -1,5 +1,7 @@
 using SplatterSystem;
 using System;
+using System.Runtime.InteropServices;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -15,6 +17,17 @@ public class EnemyManager : MonoBehaviour
     [Header("Enemy Variables")]
     [SerializeField] private float eHealth = 100f;
 
+    private Animator animator;
+    private BoxCollider2D boxCollider;
+    private CinemachineImpulseSource impulseSource;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        impulseSource = GetComponent<CinemachineImpulseSource>();
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "pBullet")
@@ -27,8 +40,11 @@ public class EnemyManager : MonoBehaviour
             }
             else if (eHealth <= 0)
             {
-                Destroy(gameObject);
+                PlayerHealth.instance.RestoreHealth(10);
+                CameraShakeManager.instance.CameraShake(impulseSource);
+                animator.SetTrigger("isDead");
                 splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
+                boxCollider.isTrigger = true;
             }
 
             // Take Damage
@@ -38,6 +54,14 @@ public class EnemyManager : MonoBehaviour
             // Splatter blood
 
 
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "pBullet")
+        {
+            splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
         }
     }
 
