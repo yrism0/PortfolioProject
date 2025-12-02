@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxHeatValue = 30f;
+        maxHeatValue = 25f;
         heatValue = maxHeatValue;
         playerCollider = GetComponent<CircleCollider2D>();  
         impulseSource = GetComponent<CinemachineImpulseSource>();
@@ -49,9 +49,7 @@ public class PlayerHealth : MonoBehaviour
         {
             iTime += Time.deltaTime;
             if (iTime >= iFrames)
-            {
-               
-                playerCollider.enabled = true;
+            {      
                 playerInvincible = false;
                 iTime = 0;
             }
@@ -80,7 +78,6 @@ public class PlayerHealth : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
-            CameraShakeManager.instance.CameraShake(impulseSource);
             RestoreHealth(Random.Range(1,5));
         }
 
@@ -98,8 +95,7 @@ public class PlayerHealth : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Enemy" && playerInvincible == false)
-        {
-            CameraShakeManager.instance.CameraShake(impulseSource);
+        {            
             TakeDamage(10);
         }
     }
@@ -111,7 +107,6 @@ public class PlayerHealth : MonoBehaviour
             CameraShakeManager.instance.CameraShake(impulseSource);
 
             heatValue -= damage;            
-            //playerCollider.enabled = false;
             playerInvincible = true;
             
         }
