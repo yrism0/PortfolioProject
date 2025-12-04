@@ -17,9 +17,16 @@ public class EnemyManager : MonoBehaviour
     [Header("Enemy Variables")]
     [SerializeField] private float eHealth = 100f;
 
+
+
+ 
+
+
+
     private Animator animator;
     private BoxCollider2D boxCollider;
     private CinemachineImpulseSource impulseSource;
+
 
     private void Start()
     {
@@ -36,15 +43,17 @@ public class EnemyManager : MonoBehaviour
 
             if (eHealth > 0)
             {
-                eHealth -= 25f;               
+                eHealth -= 100f;               
             }
             else if (eHealth <= 0)
             {
+               
                 PlayerHealth.instance.RestoreHealth(10);
                 CameraShakeManager.instance.CameraShake(impulseSource);
                 animator.SetTrigger("isDead");
                 splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
                 boxCollider.isTrigger = true;
+                
             }
 
             // Take Damage
@@ -55,6 +64,13 @@ public class EnemyManager : MonoBehaviour
 
 
         }
+    }
+
+    private void Update()
+    {
+       
+
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -82,5 +98,9 @@ public class EnemyManager : MonoBehaviour
         Vector2 hitPos = (Vector2)transform.position + splatOffset * direction;
         splatter.Spawn(SplatterSettings, hitPos, direction, splatterColour);
     }
-   
+
+ 
+
+
+
 }

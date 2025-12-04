@@ -1,3 +1,4 @@
+using TopDown.Movement;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
 
     public static bool isPaused;
+
+    [SerializeField] private PlayerRotation playerRotator; 
 
 
 
@@ -40,20 +43,27 @@ public class UIManager : MonoBehaviour
                 PauseGame();
 
             }
+            else if (isPaused == true)
+            {
+                ResumeGame();
+            }
         }
     }
 
     public void PauseGame()
     {
-        
+        Time.timeScale = 0f;
         pauseMenu.SetActive(true);
         isPaused = true;
+        playerRotator.enabled = false;
     }
 
     public void ResumeGame()
     {
-        pauseMenu?.SetActive(false);
+        Time.timeScale = 1.0f;
+        pauseMenu.SetActive(false);
         isPaused = false;
+        playerRotator.enabled = true;
     }
 
     public void GoToMainMenu()

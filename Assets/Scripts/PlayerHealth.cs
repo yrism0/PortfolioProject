@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxHeatValue = 25f;
+        maxHeatValue = 20f;
         heatValue = maxHeatValue;
         playerCollider = GetComponent<CircleCollider2D>();  
         impulseSource = GetComponent<CinemachineImpulseSource>();
