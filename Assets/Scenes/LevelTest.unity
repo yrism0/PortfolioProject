@@ -7358,13 +7358,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &690941141
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 --- !u!1 &772641736
 =======
 --- !u!1 &690941141
 >>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,13 +7380,19 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   - component: {fileID: 772641737}
   - component: {fileID: 772641739}
   - component: {fileID: 772641738}
   m_Layer: 5
   m_Name: Image
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - component: {fileID: 690941146}
@@ -7391,6 +7403,10 @@ GameObject:
   m_Layer: 0
   m_Name: EnemyTest 2 (5)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
 >>>>>>> Stashed changes
@@ -7400,10 +7416,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!95 &690941142
 Animator:
   serializedVersion: 7
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 --- !u!224 &772641737
 RectTransform:
@@ -7412,13 +7431,19 @@ RectTransform:
 Animator:
   serializedVersion: 7
 >>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   m_GameObject: {fileID: 772641736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -7434,6 +7459,9 @@ Animator:
   m_SizeDelta: {x: 1930.0673, y: 961.2077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772641738
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_GameObject: {fileID: 690941141}
@@ -7453,6 +7481,10 @@ Animator:
   m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &690941143
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
 >>>>>>> Stashed changes
@@ -7462,7 +7494,10 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   m_GameObject: {fileID: 772641736}
   m_Enabled: 1
@@ -7491,6 +7526,9 @@ MonoBehaviour:
 --- !u!222 &772641739
 CanvasRenderer:
 =======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_GameObject: {fileID: 690941141}
   m_Enabled: 1
@@ -7506,6 +7544,10 @@ CanvasRenderer:
 --- !u!61 &690941144
 BoxCollider2D:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
 >>>>>>> Stashed changes
@@ -7514,10 +7556,16 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   m_GameObject: {fileID: 772641736}
   m_CullTransparentMesh: 1
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_GameObject: {fileID: 690941141}
@@ -7631,6 +7679,10 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4615b125229dc1dc6c130314736a386fb5e43e00
 >>>>>>> Stashed changes
