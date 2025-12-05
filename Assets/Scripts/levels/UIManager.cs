@@ -83,4 +83,9 @@ public class UIManager : MonoBehaviour
     {
         playerHUD.SetActive(true);
     }
+
+    public void replay()
+    {
+        SceneManager.LoadScene("LevelTest");
+    }
 }

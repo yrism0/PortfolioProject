@@ -5,6 +5,7 @@ namespace TopDown.Movement
     [RequireComponent(typeof(Rigidbody2D))]
     public class Mover : MonoBehaviour
     {
+        public static bool speedon;
         [SerializeField] private float movementSpeed;
         private Rigidbody2D body;
         protected Vector3 currentInput;
@@ -19,8 +20,25 @@ namespace TopDown.Movement
 
         private void FixedUpdate()
         {
-            body.linearVelocity = movementSpeed * currentInput * Time.fixedDeltaTime;
-            
+           
+            if (speedon == true)
+            {
+                body.linearVelocity = movementSpeed * currentInput * Time.fixedDeltaTime * 2;
+            }
+            if (speedon == false)
+            {
+                body.linearVelocity = movementSpeed * currentInput * Time.fixedDeltaTime ;
+            }
         }
+
+         void Start()
+        {
+            speedon = false;
+        }
+         void Update()
+        {
+            
+        } 
+
     }
 }

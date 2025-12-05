@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     private float lerpTimer;
     public float chipSpeed = 2f;
 
-    public bool meterPause;
+    public static bool meterPause;
     public Slider heatMeter;
     public Slider healingBMeter;
 
@@ -36,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        meterPause = false;
         maxHeatValue = 20f;
         heatValue = maxHeatValue;
         playerCollider = GetComponent<CircleCollider2D>();  
