@@ -23,7 +23,7 @@ public class levelchagne : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("level2");
+            SceneManager.LoadScene("endofdemo");
         }
     }
 }
