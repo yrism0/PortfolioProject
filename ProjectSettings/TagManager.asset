@@ -6,6 +6,8 @@ TagManager:
   tags:
   - pBullet
   - Enemy
+  - eBullet
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -48,6 +50,9 @@ TagManager:
     locked: 0
   - name: Splatter
     uniqueID: 1184351109
+    locked: 0
+  - name: Enemy
+    uniqueID: 2933095885
     locked: 0
   - name: Player
     uniqueID: 1721262243

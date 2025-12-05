@@ -44,6 +44,13 @@ namespace TopDown.Shooting
                 Instantiate(impactEffect, transform.transform.position, transform.rotation);
                 Destroy(gameObject);
             }
+            else if (collision.gameObject.tag == "Player")
+            {
+                Instantiate(impactEffect, transform.transform.position, transform.rotation);
+                Destroy(gameObject);
+                PlayerHealth.instance.TakeDamage(5);
+                // Damage Player
+            }
         }
     }
 
