@@ -21716,7 +21716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 444344405}
   - component: {fileID: 444344406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: E-Blaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23042,7 +23042,7 @@ GameObject:
   - component: {fileID: 841300864}
   - component: {fileID: 841300866}
   - component: {fileID: 841300867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -23370,7 +23370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 912862082}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Firing Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23517,7 +23517,7 @@ GameObject:
   - component: {fileID: 947446856}
   - component: {fileID: 947446858}
   - component: {fileID: 947446857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MuzzleFlashAnimator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28448,7 +28448,7 @@ GameObject:
   - component: {fileID: 1201936003}
   - component: {fileID: 1201936004}
   - component: {fileID: 1201936006}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -29403,7 +29403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1423088242}
   - component: {fileID: 1423088243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30445,7 +30445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740195286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Firepoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31326,7 +31326,7 @@ GameObject:
   - component: {fileID: 2066116363}
   - component: {fileID: 2066116362}
   - component: {fileID: 2066116364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
