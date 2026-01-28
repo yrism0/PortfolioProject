@@ -7,6 +7,7 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.AI;
 
 public class EnemyManager : MonoBehaviour
 {
@@ -18,12 +19,14 @@ public class EnemyManager : MonoBehaviour
     public Color splatterColour = Color.red;
     public float splatOffset = 0f;
 
+
     [Header("Enemy Variables")]
     [SerializeField] private float eHealth = 100f;
     private bool isDead = false;
 
     [Header("Movement")]
-    public Transform target;
+    [SerializeField] Transform Target;
+    NavMeshAgent agent;
     public float speed = 1f;
     public float rotateSpeed = 0.05f;
     private Rigidbody2D rb;
@@ -43,8 +46,11 @@ public class EnemyManager : MonoBehaviour
     private CinemachineImpulseSource impulseSource;
 
 
-    private void Start()
+     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -110,18 +116,24 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
-       if (!target)
+        if (isDead == false)
+        {
+            agent.SetDestination(Target.position);
+        }
+       
+        RotateTowardsTarget();
+        /*if (!Target)
         {
             GetTarget();
         }
         else
         {
             RotateTowardsTarget();
-        }
+        }*/
 
-        if (Vector2.Distance(target.position, transform.position) <= distanceToStop && isDead == false)
+        if (Vector2.Distance(Target.position, transform.position) <= distanceToStop && isDead == false)
         {
             Shoot();
         }
@@ -129,7 +141,7 @@ public class EnemyManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (target != null)
+        /*if (target != null)
         {
             if (Vector2.Distance(target.position, transform.position) >= distanceToStop)
             {
@@ -139,20 +151,20 @@ public class EnemyManager : MonoBehaviour
             {
                 rb.linearVelocity = Vector2.zero;
             }
-        }
+        }*/
         
         
     }
 
     private void RotateTowardsTarget()
     {
-        Vector2 targetDirection = target.position - transform.position;
+        Vector2 targetDirection = Target.position - transform.position;
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
     }
 
-    private void GetTarget()
+    /*private void GetTarget()
     {
         if (GameObject.FindGameObjectWithTag("Player"))
         {
@@ -161,7 +173,7 @@ public class EnemyManager : MonoBehaviour
         
             
         
-    }
+    }*/
 
     private void EnemyDamage()
     {
