@@ -84,11 +84,7 @@ public class EnemyManager : MonoBehaviour
                 
             }
 
-            // Take Damage
-
-            // IF health = 0 THEN enemyDeath()
-
-            // Splatter blood
+            
 
 
         }
@@ -124,37 +120,16 @@ public class EnemyManager : MonoBehaviour
         }
        
         RotateTowardsTarget();
-        /*if (!Target)
-        {
-            GetTarget();
-        }
-        else
-        {
-            RotateTowardsTarget();
-        }*/
+        
+        
 
         if (Vector2.Distance(Target.position, transform.position) <= distanceToStop && isDead == false)
         {
             Shoot();
+            
         }
     }
 
-    private void FixedUpdate()
-    {
-        /*if (target != null)
-        {
-            if (Vector2.Distance(target.position, transform.position) >= distanceToStop)
-            {
-                rb.linearVelocity = transform.up * speed;
-            }
-            else
-            {
-                rb.linearVelocity = Vector2.zero;
-            }
-        }*/
-        
-        
-    }
 
     private void RotateTowardsTarget()
     {
@@ -164,28 +139,8 @@ public class EnemyManager : MonoBehaviour
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
     }
 
-    /*private void GetTarget()
-    {
-        if (GameObject.FindGameObjectWithTag("Player"))
-        {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-        }
-        
-            
-        
-    }*/
 
-    private void EnemyDamage()
-    {
-
-    }
-
-    private void EnemyDeath()
-    {
-        // Enemy dies
-
-        // Splatter more blood
-    }
+    
 
     public void SplatterHit(Vector2 direction)
     {
