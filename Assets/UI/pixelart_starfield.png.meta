@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b627e9edece2eea45ab6c2d0c0f53e30
+guid: 8347cf49acbb32b40bf05c0cf2fd87c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5401203757962884156
-    second: screen_C1_0
+      213: 5161061956977912460
+    second: pixelart_starfield_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 6
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: screen_C1_0
+      name: pixelart_starfield_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 11
-        height: 12
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cb0e178cc11b05b0800000000000000
-      internalID: -5401203757962884156
+      spriteID: c8a63716186cf9740800000000000000
+      internalID: 5161061956977912460
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      screen_C1_0: -5401203757962884156
+      pixelart_starfield_0: 5161061956977912460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
