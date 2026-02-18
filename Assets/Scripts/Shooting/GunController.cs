@@ -14,6 +14,7 @@ namespace TopDown.Shooting
         [SerializeField] private Animator muzzleFlashAnimator;
 
         [Header("Forms")]
+        private bool ChangingForm;
         [SerializeField] private bool defaultState;
         [SerializeField] private Animator playerAnimator;
 
@@ -62,15 +63,34 @@ namespace TopDown.Shooting
 
         private void ChangeForm()
         {
-            defaultState = false;
-            playerAnimator.SetBool("IsDefault", false);
+            if (!ChangingForm)
+            {
+                ChangingForm = true;
+                // ChangingForm set to FALSE in Animation Flag
+                defaultState = false;
+                playerAnimator.SetBool("IsDefault", false);
+                
+            }
+
         }
 
         private void ReturnToDefaultState()
         {
-            defaultState = true;
-            playerAnimator.SetBool("IsDefault", true);
+            if (!ChangingForm)
+            {
+                ChangingForm = true;
+                // ChangingForm set to FALSE in Animation Flag
+                defaultState = true;
+                playerAnimator.SetBool("IsDefault", true);
+            }
+            
 
+        }
+
+        private void ChangingFormAnimFlag()
+        {
+            // Called via Animation Flag
+            ChangingForm = false;
         }
         #region Input
 
