@@ -20,6 +20,11 @@ namespace TopDown.Shooting
 
         // Shoot Point
 
+        private void Start()
+        {
+            defaultState = true;
+        }
+
         private void Update()
         {
             cooldownTimer += Time.deltaTime;
@@ -29,24 +34,43 @@ namespace TopDown.Shooting
             {
                 ChangeForm();
             }
+            else if (Input.GetKeyDown(KeyCode.L))
+            {
+                ReturnToDefaultState();
+            }
         }
 
         private void Shoot()
         {
-            if (cooldownTimer < cooldown) return;
+            if (defaultState)
+            {
+                if (cooldownTimer < cooldown) return;
 
-            GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation, null);
-            bullet.GetComponent<Projectile>().ShootBullet(firepoint);
+                GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation, null);
+                bullet.GetComponent<Projectile>().ShootBullet(firepoint);
 
-            muzzleFlashAnimator.SetTrigger("shoot");
-            cooldownTimer = 0;
+                muzzleFlashAnimator.SetTrigger("shoot");
+                cooldownTimer = 0;
+            }
+            else if (!defaultState)
+            {
+                
+            }
+            
         }
 
         private void ChangeForm()
         {
-            
+            defaultState = false;
+            playerAnimator.SetBool("isDefault", true);
         }
 
+        private void ReturnToDefaultState()
+        {
+            defaultState = true;
+            playerAnimator.SetBool("isDefault", false);
+
+        }
         #region Input
 
         private void OnShoot()

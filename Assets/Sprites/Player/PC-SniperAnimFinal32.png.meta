@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 801fb51f5121b8446941f65a2e6d5991
+guid: 8bf2ddfb35bad0347a2eb80ae0d7374d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7120133659818338878
-    second: PC-SniperAnimFinal_0
+      213: -9017433828403336147
+    second: PC-SniperAnimFinal32_0
   - first:
-      213: 6969195419098688425
-    second: PC-SniperAnimFinal_1
+      213: 3499238732219542570
+    second: PC-SniperAnimFinal32_1
   - first:
-      213: -8204702163308883768
-    second: PC-SniperAnimFinal_2
+      213: 6393795590153751998
+    second: PC-SniperAnimFinal32_2
   - first:
-      213: -8767900011645435303
-    second: PC-SniperAnimFinal_3
+      213: 7935814423997425520
+    second: PC-SniperAnimFinal32_3
   - first:
-      213: 3419208429492617175
-    second: PC-SniperAnimFinal_4
+      213: 8419579213235390922
+    second: PC-SniperAnimFinal32_4
   - first:
-      213: 2157546022250113597
-    second: PC-SniperAnimFinal_5
+      213: -93884979751259832
+    second: PC-SniperAnimFinal32_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,56 +115,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC-SniperAnimFinal_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c5d9351924303d90800000000000000
-      internalID: -7120133659818338878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC-SniperAnimFinal_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ab28ad2f4e87b060800000000000000
-      internalID: 6969195419098688425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC-SniperAnimFinal_2
+      name: PC-SniperAnimFinal32_0
       rect:
         serializedVersion: 2
         x: 0
         y: 48
-        width: 48
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,19 +130,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c058145ada032e80800000000000000
-      internalID: -8204702163308883768
+      spriteID: d2cad60a5b3abd280800000000000000
+      internalID: -9017433828403336147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC-SniperAnimFinal_3
+      name: PC-SniperAnimFinal32_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 48
-        width: 48
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,19 +152,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9520bbbc469225680800000000000000
-      internalID: -8767900011645435303
+      spriteID: a2ceb32561bcf8030800000000000000
+      internalID: 3499238732219542570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC-SniperAnimFinal_4
+      name: PC-SniperAnimFinal32_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdc295a6335bb850800000000000000
+      internalID: 6393795590153751998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC-SniperAnimFinal32_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -218,19 +196,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dfbdec63f7737f20800000000000000
-      internalID: 3419208429492617175
+      spriteID: 077a9c14c2da12e60800000000000000
+      internalID: 7935814423997425520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC-SniperAnimFinal_5
+      name: PC-SniperAnimFinal32_4
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
+        width: 32
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -240,8 +218,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3a66c21da421fd10800000000000000
-      internalID: 2157546022250113597
+      spriteID: ac988238faa58d470800000000000000
+      internalID: 8419579213235390922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC-SniperAnimFinal32_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8417e2cbb1472bef0800000000000000
+      internalID: -93884979751259832
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 03893a50916541341a60e0c84cd51763
+    spriteID: bb602f6350b042f4c92b38d95c985a58
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PC-SniperAnimFinal_0: -7120133659818338878
-      PC-SniperAnimFinal_1: 6969195419098688425
-      PC-SniperAnimFinal_2: -8204702163308883768
-      PC-SniperAnimFinal_3: -8767900011645435303
-      PC-SniperAnimFinal_4: 3419208429492617175
-      PC-SniperAnimFinal_5: 2157546022250113597
+      PC-SniperAnimFinal32_0: -9017433828403336147
+      PC-SniperAnimFinal32_1: 3499238732219542570
+      PC-SniperAnimFinal32_2: 6393795590153751998
+      PC-SniperAnimFinal32_3: 7935814423997425520
+      PC-SniperAnimFinal32_4: 8419579213235390922
+      PC-SniperAnimFinal32_5: -93884979751259832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
