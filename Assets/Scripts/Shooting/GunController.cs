@@ -13,11 +13,22 @@ namespace TopDown.Shooting
         [SerializeField] private Transform firepoint;
         [SerializeField] private Animator muzzleFlashAnimator;
 
+        [Header("Forms")]
+        [SerializeField] private bool defaultState;
+        [SerializeField] private Animator playerAnimator;
+
+
         // Shoot Point
 
         private void Update()
         {
             cooldownTimer += Time.deltaTime;
+
+            // TEST CODE 
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                ChangeForm();
+            }
         }
 
         private void Shoot()
@@ -29,6 +40,11 @@ namespace TopDown.Shooting
 
             muzzleFlashAnimator.SetTrigger("shoot");
             cooldownTimer = 0;
+        }
+
+        private void ChangeForm()
+        {
+            
         }
 
         #region Input

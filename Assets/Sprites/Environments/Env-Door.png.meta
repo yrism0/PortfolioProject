@@ -104,7 +104,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -126,6 +126,28 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b3bde2724ae0f4ebed7e71403256fe
+      internalID: -1154172044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Env-Door_2
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 16
         width: 16
         height: 16
@@ -137,14 +159,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfe0faa39d60e8549aecdf7db616a010
-      internalID: -998293328
+      spriteID: 0cf8e1c7d51c5aa42ad9762b42418bd7
+      internalID: 824218811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Env-Door_2
+      name: Env-Door_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b569486ba87a1ce41b21075612082377
+      internalID: 430691585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Env-Door_4
       rect:
         serializedVersion: 2
         x: 0
@@ -159,8 +203,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa2e04133672834dbf8b3abe99ca2c2
-      internalID: -866555355
+      spriteID: cd853f0c7b6efe3408b60018f0057bdd
+      internalID: 981396956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Env-Door_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b6ff0c2503a014ca9b00b432542088
+      internalID: -1419452037
       vertices: []
       indices: 
       edges: []
@@ -169,7 +235,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d7c28ccabd957144ead158aebee7c38d
+    spriteID: 2355c946f9dac614e8f6b6fe5b903d4b
     internalID: 0
     vertices: []
     indices: 
@@ -180,8 +246,11 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Env-Door_0: 8762306439439866793
-      Env-Door_1: -998293328
-      Env-Door_2: -866555355
+      Env-Door_1: -1154172044
+      Env-Door_2: 824218811
+      Env-Door_3: 430691585
+      Env-Door_4: 981396956
+      Env-Door_5: -1419452037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
