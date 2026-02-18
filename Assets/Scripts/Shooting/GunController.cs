@@ -23,6 +23,7 @@ namespace TopDown.Shooting
         private void Start()
         {
             defaultState = true;
+            playerAnimator.SetBool("IsDefault", true);
         }
 
         private void Update()
@@ -62,13 +63,13 @@ namespace TopDown.Shooting
         private void ChangeForm()
         {
             defaultState = false;
-            playerAnimator.SetBool("isDefault", true);
+            playerAnimator.SetBool("IsDefault", false);
         }
 
         private void ReturnToDefaultState()
         {
             defaultState = true;
-            playerAnimator.SetBool("isDefault", false);
+            playerAnimator.SetBool("IsDefault", true);
 
         }
         #region Input
