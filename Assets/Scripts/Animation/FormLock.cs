@@ -1,3 +1,4 @@
+using TopDown.Shooting;
 using UnityEngine;
 
 public class FormLock : MonoBehaviour
@@ -14,5 +15,10 @@ public class FormLock : MonoBehaviour
         
     }
 
+    private void ChangingFormAnimFlag()
+    {
+        // Called via Animation Flag
+        GunController.changingForm = false;
+    }
 
 }

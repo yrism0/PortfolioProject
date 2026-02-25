@@ -22817,6 +22817,8 @@ MonoBehaviour:
   muzzleFlashAnimator: {fileID: 947446858}
   defaultState: 0
   playerAnimator: {fileID: 1423088244}
+  sFirepoint: {fileID: 1023882700}
+  sBulletPrefab: {fileID: 0}
 --- !u!58 &841300865
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26622,7 +26624,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26652,7 +26654,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26732,7 +26734,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26752,7 +26754,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -27885,15 +27887,15 @@ Tilemap:
   - m_RefCount: 91
     m_Data: {fileID: 11400000, guid: 08cb943fc992ca344aa4564bfc619043, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 8c1c669236f0cff4fac448ce44459fc6, type: 2}
+    m_Data: {fileID: 11400000, guid: 487a81ea068c836489615cda3351471f, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: cd029ac48395a2544b106cd21afbbde6, type: 2}
+    m_Data: {fileID: 11400000, guid: b29fffd96e79dbb4e99f0289be5f59f0, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: d65ca64498ada8b4786a45a7f403c20c, type: 2}
+    m_Data: {fileID: 11400000, guid: ed221c713eaf53f4885a04c27cc7244a, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 2e5d8749f6296d04d803656949a13b75, type: 2}
+    m_Data: {fileID: 11400000, guid: 00f1c71e525e81a4d939f9394bf09e74, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 5c2ae85a40376ce45b412b10af841e1c, type: 2}
+    m_Data: {fileID: 11400000, guid: e777ad7a6c75d1f46b4f80ca9dec791a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: acee4cb502b95ca40a45b6db0450422a, type: 2}
   - m_RefCount: 4
@@ -27926,15 +27928,15 @@ Tilemap:
   - m_RefCount: 91
     m_Data: {fileID: 124111781, guid: e8343f9ddadef3c4da846090f7ce250e, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 990038660, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
+    m_Data: {fileID: 716069641, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1456167091, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1695593934, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1671018361, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -754065368207532480, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1949842869, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -685910444, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1012955830, guid: 92092f5799c1a3b4eb03ec4268ae8aba, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1625047355, guid: e8343f9ddadef3c4da846090f7ce250e, type: 3}
   - m_RefCount: 4
@@ -29140,6 +29142,7 @@ GameObject:
   - component: {fileID: 1423088242}
   - component: {fileID: 1423088243}
   - component: {fileID: 1423088244}
+  - component: {fileID: 1423088245}
   m_Layer: 6
   m_Name: Torso
   m_TagString: Untagged
@@ -29243,6 +29246,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1423088245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423088241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d37cba345de3b24cb558f6cf7458997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1429537695
 GameObject:
   m_ObjectHideFlags: 0

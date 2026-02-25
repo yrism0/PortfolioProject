@@ -14,9 +14,14 @@ namespace TopDown.Shooting
         [SerializeField] private Animator muzzleFlashAnimator;
 
         [Header("Forms")]
-        private bool ChangingForm;
+         public static bool changingForm;
         [SerializeField] private bool defaultState;
         [SerializeField] private Animator playerAnimator;
+        private float sniperCountdown;
+
+        [SerializeField] private Transform sFirepoint;
+        [SerializeField] private GameObject sBulletPrefab;
+        
 
 
         // Shoot Point
@@ -32,14 +37,16 @@ namespace TopDown.Shooting
             cooldownTimer += Time.deltaTime;
 
             // TEST CODE 
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState)
             {
                 ChangeForm();
             }
-            else if (Input.GetKeyDown(KeyCode.L))
+            else if (Input.GetKeyDown(KeyCode.L) && !changingForm && !defaultState)
             {
                 ReturnToDefaultState();
             }
+
+            SniperForm();
         }
 
         private void Shoot()
@@ -56,16 +63,25 @@ namespace TopDown.Shooting
             }
             else if (!defaultState)
             {
-                
+                //GameObject sBullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
+                //sBullet.GetComponent<Projectile>().ShootBullet(sFirepoint);
+
+                if (cooldownTimer < cooldown) return;
+
+                GameObject bullet = Instantiate(bulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
+                bullet.GetComponent<Projectile>().ShootBullet(sFirepoint);
+
+                muzzleFlashAnimator.SetTrigger("shoot");
+                cooldownTimer = 0;
             }
             
         }
 
         private void ChangeForm()
         {
-            if (!ChangingForm)
+            if (!changingForm)
             {
-                ChangingForm = true;
+                changingForm = true;
                 // ChangingForm set to FALSE in Animation Flag
                 defaultState = false;
                 playerAnimator.SetBool("IsDefault", false);
@@ -76,9 +92,9 @@ namespace TopDown.Shooting
 
         private void ReturnToDefaultState()
         {
-            if (!ChangingForm)
+            if (!changingForm)
             {
-                ChangingForm = true;
+                changingForm = true;
                 // ChangingForm set to FALSE in Animation Flag
                 defaultState = true;
                 playerAnimator.SetBool("IsDefault", true);
@@ -87,11 +103,20 @@ namespace TopDown.Shooting
 
         }
 
-        private void ChangingFormAnimFlag()
+        private void SniperForm()
         {
-            // Called via Animation Flag
-            ChangingForm = false;
+            if (!defaultState)
+            {
+                sniperCountdown += Time.deltaTime;
+                if (sniperCountdown >= 5)
+                {
+                    ReturnToDefaultState();
+                    sniperCountdown = 0;
+                }
+            }
+            
         }
+        
         #region Input
 
         private void OnShoot()
