@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.AI;
+using System.Runtime.CompilerServices;
 
 public class EnemyManager : MonoBehaviour
 {
@@ -46,7 +47,7 @@ public class EnemyManager : MonoBehaviour
     private CinemachineImpulseSource impulseSource;
 
 
-     void Start()
+    void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -55,6 +56,10 @@ public class EnemyManager : MonoBehaviour
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
+
+        
+
+
     }
 
    
@@ -78,7 +83,6 @@ public class EnemyManager : MonoBehaviour
                 isDead = true;
                 splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
                 boxCollider.isTrigger = true;
-
                 speed = 0f;
                 rotateSpeed = 0f;
                 

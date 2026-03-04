@@ -9,8 +9,17 @@ public class PlayerHealth : MonoBehaviour
 
     // Variables
 
+    [Header("Player Attributes")]
+    [SerializeField] private GameObject player;
+
     public float heatValue;
     private float maxHeatValue;
+
+    private float lerpTimer;
+    public float chipSpeed = 2f;
+
+    private bool isPlayerDead;
+    [SerializeField] GameObject playerDeathFX;
 
     [Header("Invincibility Frames")]
     [SerializeField] private float iFrames;
@@ -18,15 +27,17 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private bool playerInvincible = false;
     private CircleCollider2D playerCollider;
 
-    private float lerpTimer;
-    public float chipSpeed = 2f;
+    
 
+    [Header("Heat Meter")]
     public static bool meterPause;
     public Slider heatMeter;
     public Slider healingBMeter;
 
     
     private CinemachineImpulseSource impulseSource;
+
+    
 
     private void Awake()
     {
@@ -36,11 +47,13 @@ public class PlayerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isPlayerDead = false;
         meterPause = false;
         maxHeatValue = 20f;
         heatValue = maxHeatValue;
         playerCollider = GetComponent<CircleCollider2D>();  
         impulseSource = GetComponent<CinemachineImpulseSource>();
+        
     }
 
     // Update is called once per frame
@@ -82,6 +95,12 @@ public class PlayerHealth : MonoBehaviour
             RestoreHealth(Random.Range(1,5));
         }
 
+        // Player Death - Will be disabled for now
+        /*if (heatValue <= 0 && !isPlayerDead)
+        {
+            isPlayerDead = true;
+            PlayerDeath();
+        }*/
         
     }
 
@@ -126,7 +145,11 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-   
+    public void PlayerDeath()
+    {
+        Instantiate(playerDeathFX, transform.position, Quaternion.identity);
+        Destroy(player);
+    }
     
 
 }
