@@ -50,14 +50,17 @@ public class EnemyManager : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
-
         
+
+        Target = GameObject.Find("Player").transform;
+        splatter = GameObject.Find("SplatterSystemMesh").GetComponent<MeshSplatterManager>();
 
 
     }
@@ -118,10 +121,7 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
-        if (isDead == false)
-        {
-            agent.SetDestination(Target.position);
-        }
+        FindPlayer(); 
        
         RotateTowardsTarget();
         
@@ -152,7 +152,13 @@ public class EnemyManager : MonoBehaviour
         splatter.Spawn(SplatterSettings, hitPos, direction, splatterColour);
     }
 
- 
+    public void FindPlayer()
+    {
+        if (isDead == false)
+        {
+            agent.SetDestination(Target.position);
+        }
+    }
 
 
 
