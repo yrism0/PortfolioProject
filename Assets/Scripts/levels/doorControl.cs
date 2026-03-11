@@ -3,23 +3,23 @@ using UnityEngine;
 
 public class doorControl : MonoBehaviour
 {
-
-    public GameObject doors;
-   public  bool isopen;
-    public bool isclose;
+    
+    [SerializeField] public GameObject doors;
+    [SerializeField] public  bool isopen;
+    [SerializeField] public bool isclose;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        doors.SetActive(true);
-        isclose = true;
-        isopen = false;
+        doors.SetActive(false);
+        isclose = false;
+        isopen = true;
     }
 
     // Update is called once per frame
     void Update()
     {
       
-        if (Input.GetKeyDown("m"))
+       /* if (Input.GetKeyDown("m"))
         {
             if (isclose == false)
             {
@@ -30,7 +30,7 @@ public class doorControl : MonoBehaviour
             {
                 open();
             }
-        }
+        } */
     }
     public void close()
     {

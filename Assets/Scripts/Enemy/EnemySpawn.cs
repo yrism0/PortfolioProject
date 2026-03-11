@@ -6,12 +6,13 @@ public class EnemySpawn : MonoBehaviour
     private bool roomEntered;
     [SerializeField] private GameObject enemy;
     [SerializeField] private GameObject[] spawnPoints;
-
+    doorControl doorControl;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         roomEntered = false;
-        
+       
     }
 
     // Update is called once per frame
@@ -28,8 +29,9 @@ public class EnemySpawn : MonoBehaviour
             {
                 roomEntered = true;
                 Instantiate(enemy, spawnPoints[i].transform.position, transform.rotation);
+               
             }
-            
+            //doorControl.close();
         }
         
     }
