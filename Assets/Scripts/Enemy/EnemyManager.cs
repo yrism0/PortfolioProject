@@ -46,6 +46,8 @@ public class EnemyManager : MonoBehaviour
     private BoxCollider2D boxCollider;
     private CinemachineImpulseSource impulseSource;
 
+    
+
 
     void Start()
     {

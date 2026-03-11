@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DoorLocked
+  m_Name: Door2Locked
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -5182901284608329578, guid: 3415710e9c4b43244ac8b8f04a3a4a98, type: 3}
+      value: {fileID: 7543248462163689743, guid: db502290575bf784599fdbf830b852da, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -5182901284608329578, guid: 3415710e9c4b43244ac8b8f04a3a4a98, type: 3}
+    - {fileID: 7543248462163689743, guid: db502290575bf784599fdbf830b852da, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
