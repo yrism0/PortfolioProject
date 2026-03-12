@@ -24,6 +24,7 @@ public class EnemyManager : MonoBehaviour
     [Header("Enemy Variables")]
     [SerializeField] private float eHealth = 100f;
     private bool isDead = false;
+    public EnemySpawn enemySpawn;
 
     [Header("Movement")]
     [SerializeField] Transform Target;
@@ -59,7 +60,7 @@ public class EnemyManager : MonoBehaviour
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
-        
+        //enemySpawn = GetComponent<EnemySpawn>();
 
         Target = GameObject.Find("Player").transform;
         splatter = GameObject.Find("SplatterSystemMesh").GetComponent<MeshSplatterManager>();
@@ -90,6 +91,7 @@ public class EnemyManager : MonoBehaviour
                 boxCollider.isTrigger = true;
                 speed = 0f;
                 rotateSpeed = 0f;
+                //enemySpawn.encounterSize--;
                 
             }
 

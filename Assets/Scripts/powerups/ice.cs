@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ice : MonoBehaviour
 {
+
+    private float frozenTimer;
     public GameObject iceup;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +28,13 @@ public class ice : MonoBehaviour
     }
     IEnumerator iced()
     {
+       
+        frozenTimer += Time.deltaTime;
+        if (frozenTimer >= 10)
+        {           
+            PlayerHealth.meterPause = false;
+        }
+        
         PlayerHealth.meterPause = true;
         Debug.Log("chill off");
         yield return null;
