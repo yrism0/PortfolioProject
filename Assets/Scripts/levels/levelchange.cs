@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,7 +24,15 @@ public class levelchange : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("endofdemo");
+            StartCoroutine(LoadSceneWithFade("endofdemo"));
         }
+    }
+
+    IEnumerator LoadSceneWithFade(string sceneName)
+    {
+        // Start the fade-out effect
+        yield return FadeManager.Instance.FadeOut();
+        // Load the new scene
+        SceneManager.LoadScene("endofdemo");
     }
 }
