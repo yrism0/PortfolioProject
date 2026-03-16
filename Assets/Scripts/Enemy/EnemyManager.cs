@@ -12,6 +12,8 @@ using System.Runtime.CompilerServices;
 
 public class EnemyManager : MonoBehaviour
 {
+    public static EnemyManager instance;
+
     // Variables
 
     [Header("Splatter")]
@@ -22,8 +24,9 @@ public class EnemyManager : MonoBehaviour
 
 
     [Header("Enemy Variables")]
-    [SerializeField] private float eHealth = 100f;
-    private bool isDead = false;
+    [SerializeField] public float eHealth = 100f;
+    public bool isDead = false;
+    public int deathValue = 0;
     public EnemySpawn enemySpawn;
 
     [Header("Movement")]
@@ -47,8 +50,11 @@ public class EnemyManager : MonoBehaviour
     private BoxCollider2D boxCollider;
     private CinemachineImpulseSource impulseSource;
 
-    
 
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -82,8 +88,8 @@ public class EnemyManager : MonoBehaviour
             }
             else if (eHealth <= 0)
             {
-               
-                PlayerHealth.instance.RestoreHealth(10);
+                Die();
+                /*PlayerHealth.instance.RestoreHealth(10);
                 CameraShakeManager.instance.CameraShake(impulseSource);
                 animator.SetTrigger("isDead");
                 isDead = true;
@@ -91,7 +97,7 @@ public class EnemyManager : MonoBehaviour
                 boxCollider.isTrigger = true;
                 speed = 0f;
                 rotateSpeed = 0f;
-                //enemySpawn.encounterSize--;
+                //enemySpawn.encounterSize--;*/
                 
             }
 
@@ -164,6 +170,17 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-
+    private void Die()
+    {
+        PlayerHealth.instance.RestoreHealth(10);
+        CameraShakeManager.instance.CameraShake(impulseSource);
+        animator.SetTrigger("isDead");
+        isDead = true;
+        splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
+        boxCollider.isTrigger = true;
+        speed = 0f;
+        rotateSpeed = 0f;
+        deathValue++;
+    }
 
 }

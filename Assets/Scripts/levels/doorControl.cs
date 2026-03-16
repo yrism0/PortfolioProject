@@ -3,11 +3,18 @@ using UnityEngine;
 
 public class doorControl : MonoBehaviour
 {
+
+    public static doorControl instance;
     
     [SerializeField] private GameObject doors;
     [SerializeField] private bool isOpen;
     [SerializeField] private Animator[] animator;
     [SerializeField] private BoxCollider2D[] doorCollision;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,7 +44,7 @@ public class doorControl : MonoBehaviour
     }
     public void Close()
     {
-        Debug.Log("close");
+        
         //doors.SetActive(true);
         isOpen = false;
         for (int i = 0; i < animator.Length; i++)
@@ -55,7 +62,7 @@ public class doorControl : MonoBehaviour
 
     public void Open()
     {
-        Debug.Log("open");
+        
         //doors.SetActive(false);
         isOpen = true;
 

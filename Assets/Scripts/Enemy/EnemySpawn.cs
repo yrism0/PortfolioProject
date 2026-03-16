@@ -1,28 +1,36 @@
+using JetBrains.Annotations;
+using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
+    
     [Header("Spawning")]
     private bool roomEntered;
+    private EnemyManager enemyInEncounter;
     [SerializeField] private GameObject enemy;
     [SerializeField] private GameObject[] spawnPoints;
 
     [Header("Encounters")]
     //public doorControl doorControl;
     //public EnemyManager enemyManager;
-    //public int encounterSize;
+    private bool encounterStarted;
+    public int encounterSize;
+    [SerializeField] private int enemiesSpawned;
 
     [Header("Other")]
     [SerializeField] private GameObject spawnEffect;
     [SerializeField] private Transform encounterParent;
+    
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //enemyManager = GetComponent<EnemyManager>();
-        //doorControl = GetComponent<doorControl>();
+        enemyInEncounter = enemy.GetComponent<EnemyManager>();
         roomEntered = false;
        
     }
@@ -30,40 +38,56 @@ public class EnemySpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (encounterSize == 0)
+        // NONE OF THIS SHIT WORKS
+        // IT CANT DETECT WHEN THE ENEMIES DIE FOR WHATEVER REASON
+       
+        if (EnemyManager.instance.isDead == true && enemiesSpawned > 0 && encounterStarted)
         {
-            EndEncounter();
-        }*/
+            Debug.Log("Enemy DEAD!!!!!"); // PICKS IT UP NOW, WILL NOT DECREASE BY 1; PROBABLY DUE TO BEING IN UPDATE.
+            enemiesSpawned -= 1;
+            if (enemiesSpawned == 0)
+            {
+                EndEncounter();
+            }
+            //encounterSize -= 1;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!roomEntered && collision.tag == "Player")
         {
-            //StartEncounter();
+            StartEncounter();
+            
 
             for (int i = 0; i < spawnPoints.Length; i++)
             {
                 
-                roomEntered = true;
+                roomEntered = true;                
                 Instantiate(spawnEffect, spawnPoints[i].transform.position, Quaternion.identity, encounterParent);                
                 Instantiate(enemy, spawnPoints[i].transform.position, transform.rotation, encounterParent);
-                //encounterSize = i;                
-                
+                enemiesSpawned++;
+                //encounterSize = i + 1;
+
+
                 
             }
             
         }
         
     }
+
     
-    /*private void StartEncounter()
+    
+    private void StartEncounter()
     {
-        doorControl.Close();
+        encounterStarted = true;
+        doorControl.instance.Close();
     }
 
     private void EndEncounter()
     {
-        doorControl.Open();
-    }*/
+        encounterStarted = false;
+        doorControl.instance.Open();
+    }
 }
