@@ -66,7 +66,7 @@ public class EnemyManager : MonoBehaviour
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
-        //enemySpawn = GetComponent<EnemySpawn>();
+        enemySpawn = GetComponentInParent<EnemySpawn>();
 
         Target = GameObject.Find("Player").transform;
         splatter = GameObject.Find("SplatterSystemMesh").GetComponent<MeshSplatterManager>();
@@ -180,7 +180,7 @@ public class EnemyManager : MonoBehaviour
         boxCollider.isTrigger = true;
         speed = 0f;
         rotateSpeed = 0f;
-        deathValue++;
+        enemySpawn.enemiesSpawned--;
     }
 
 }

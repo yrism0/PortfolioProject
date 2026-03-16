@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using NUnit.Framework.Constraints;
 using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,50 +8,38 @@ public class EnemySpawn : MonoBehaviour
 {
     
     [Header("Spawning")]
-    private bool roomEntered;
-    private EnemyManager enemyInEncounter;
+    [SerializeField] private bool roomEntered;
+   
     [SerializeField] private GameObject enemy;
     [SerializeField] private GameObject[] spawnPoints;
+    [SerializeField] private BoxCollider2D boxCollider;
 
-    [Header("Encounters")]
-    //public doorControl doorControl;
-    //public EnemyManager enemyManager;
-    private bool encounterStarted;
-    public int encounterSize;
-    [SerializeField] private int enemiesSpawned;
+    [Header("Encounters")]       
+    [SerializeField] public int enemiesSpawned;
+    private bool inEncounter;
 
     [Header("Other")]
     [SerializeField] private GameObject spawnEffect;
     [SerializeField] private Transform encounterParent;
-    
 
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //enemyManager = GetComponent<EnemyManager>();
-        enemyInEncounter = enemy.GetComponent<EnemyManager>();
         roomEntered = false;
-       
+        inEncounter = false;
+        boxCollider = GetComponent<BoxCollider2D>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        // NONE OF THIS SHIT WORKS
-        // IT CANT DETECT WHEN THE ENEMIES DIE FOR WHATEVER REASON
-       
-        if (EnemyManager.instance.isDead == true && enemiesSpawned > 0 && encounterStarted)
-        {
-            Debug.Log("Enemy DEAD!!!!!"); // PICKS IT UP NOW, WILL NOT DECREASE BY 1; PROBABLY DUE TO BEING IN UPDATE.
-            enemiesSpawned -= 1;
-            if (enemiesSpawned == 0)
-            {
-                EndEncounter();
-            }
-            //encounterSize -= 1;
-        }
+        
+        CheckEncounter();
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -58,7 +47,7 @@ public class EnemySpawn : MonoBehaviour
         if (!roomEntered && collision.tag == "Player")
         {
             StartEncounter();
-            
+            boxCollider.enabled = false;
 
             for (int i = 0; i < spawnPoints.Length; i++)
             {
@@ -67,10 +56,14 @@ public class EnemySpawn : MonoBehaviour
                 Instantiate(spawnEffect, spawnPoints[i].transform.position, Quaternion.identity, encounterParent);                
                 Instantiate(enemy, spawnPoints[i].transform.position, transform.rotation, encounterParent);
                 enemiesSpawned++;
+                if (enemiesSpawned == 0) // Moved here for testing - doesn't really work too well
+                {
+                    EndEncounter();
+                }
                 //encounterSize = i + 1;
 
 
-                
+
             }
             
         }
@@ -81,13 +74,25 @@ public class EnemySpawn : MonoBehaviour
     
     private void StartEncounter()
     {
-        encounterStarted = true;
+        inEncounter = true;
+        enemiesSpawned = 0;
         doorControl.instance.Close();
+        Debug.Log("Encounter Start");
     }
 
     private void EndEncounter()
     {
-        encounterStarted = false;
+        //roomEntered = false;
+        inEncounter = false;
         doorControl.instance.Open();
+        Debug.Log("Encounter End");
+    }
+
+    private void CheckEncounter()
+    {
+        if (roomEntered && enemiesSpawned == 0 && inEncounter)
+        {
+            EndEncounter();
+        }
     }
 }

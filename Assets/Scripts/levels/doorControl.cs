@@ -44,7 +44,7 @@ public class doorControl : MonoBehaviour
     }
     public void Close()
     {
-        
+        Debug.Log("Door Closes");
         //doors.SetActive(true);
         isOpen = false;
         for (int i = 0; i < animator.Length; i++)
@@ -65,6 +65,7 @@ public class doorControl : MonoBehaviour
         
         //doors.SetActive(false);
         isOpen = true;
+        Debug.Log("Door Opens");
 
         for (int i = 0; i < animator.Length; i++)
         {
