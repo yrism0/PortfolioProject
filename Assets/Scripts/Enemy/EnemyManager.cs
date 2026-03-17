@@ -78,39 +78,30 @@ public class EnemyManager : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "pBullet")
+        Debug.Log("HIT");
+        if (eHealth > 0)
         {
-            Debug.Log("HIT");
-
-            if (eHealth > 0)
+            if (collision.gameObject.tag == "pBullet")
             {
-                eHealth -= 100f;               
+                eHealth -= 60f;
             }
-            else if (eHealth <= 0)
+            else if (collision.gameObject.tag == "pBulletS")
             {
                 Die();
-                /*PlayerHealth.instance.RestoreHealth(10);
-                CameraShakeManager.instance.CameraShake(impulseSource);
-                animator.SetTrigger("isDead");
-                isDead = true;
-                splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
-                boxCollider.isTrigger = true;
-                speed = 0f;
-                rotateSpeed = 0f;
-                //enemySpawn.encounterSize--;*/
-                
             }
-
-            
-
-
         }
+        else if (eHealth <= 0)
+        {
+            Die();
+        }
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "pBullet")
+        if (collision.gameObject.tag == "pBullet" || collision.gameObject.tag == "pBulletS")
         {
+            Debug.Log("SPLAT");
             splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
         }
     }
@@ -135,7 +126,6 @@ public class EnemyManager : MonoBehaviour
        
         RotateTowardsTarget();
         
-        
 
         if (Vector2.Distance(Target.position, transform.position) <= distanceToStop && isDead == false)
         {
@@ -143,6 +133,8 @@ public class EnemyManager : MonoBehaviour
             
         }
     }
+
+    
 
 
     private void RotateTowardsTarget()
@@ -158,6 +150,7 @@ public class EnemyManager : MonoBehaviour
 
     public void SplatterHit(Vector2 direction)
     {
+        
         Vector2 hitPos = (Vector2)transform.position + splatOffset * direction;
         splatter.Spawn(SplatterSettings, hitPos, direction, splatterColour);
     }
@@ -172,11 +165,11 @@ public class EnemyManager : MonoBehaviour
 
     private void Die()
     {
-        PlayerHealth.instance.RestoreHealth(10);
+        PlayerHealth.instance.RestoreHealth(5);
         CameraShakeManager.instance.CameraShake(impulseSource);
         animator.SetTrigger("isDead");
         isDead = true;
-        splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);
+        splatter.Spawn(SplatterSettings, transform.position, null, splatterColour);        
         boxCollider.isTrigger = true;
         speed = 0f;
         rotateSpeed = 0f;

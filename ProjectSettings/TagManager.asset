@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - eBullet
   - Wall
+  - pBulletS
   layers:
   - Default
   - TransparentFX

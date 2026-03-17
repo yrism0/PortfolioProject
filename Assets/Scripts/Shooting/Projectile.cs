@@ -39,6 +39,7 @@ namespace TopDown.Shooting
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            
             if (collision.gameObject.tag != "Player")
             {
                 Instantiate(impactEffect, transform.transform.position, transform.rotation);

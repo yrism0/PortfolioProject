@@ -31,11 +31,11 @@ public class PlayerHealth : MonoBehaviour
     [Header("Heat Meter")]
     public static bool meterPause;
     public Slider heatMeter;
-    public Slider healingBMeter;
 
     [SerializeField] private Image heatMeterFill;    
     private Color defaultHUD = new Color32(255, 157, 0, 255);
     private Color frozenHUD = new Color32(181, 235, 255, 255);
+    
     
     private CinemachineImpulseSource impulseSource;
 
@@ -85,7 +85,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
 
-            healingBMeter.value = heatMeter.value;
+            
 
 
         if (Input.GetKeyDown(KeyCode.K))
@@ -111,15 +111,24 @@ public class PlayerHealth : MonoBehaviour
     {
         heatMeter.value = heatValue;
         heatMeter.maxValue = maxHeatValue;
+        
         if (meterPause)
         {
             heatMeterFill.color = frozenHUD;
         }
         else
         {
-            heatMeterFill.color = defaultHUD; ;
+            if (heatMeter.value < 5)
+            {
+                heatMeterFill.color = Color.red;
+            }
+            else
+            {
+                heatMeterFill.color = defaultHUD;
+            }
+             
         }
-               
+
 
     }
 

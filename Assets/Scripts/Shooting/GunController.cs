@@ -13,15 +13,19 @@ namespace TopDown.Shooting
         [SerializeField] private Transform firepoint;
         [SerializeField] private Animator muzzleFlashAnimator;
 
-        [Header("Forms")]
-         public static bool changingForm;
-        private bool buttonPressed;
-        [SerializeField] private bool defaultState;
-        [SerializeField] private Animator playerAnimator;
-        private float sniperCountdown;
-
+        [Header("Sniper Form References")]
+        [SerializeField] private Animator muzzleFlashAnimatorS;
         [SerializeField] private Transform sFirepoint;
         [SerializeField] private GameObject sBulletPrefab;
+
+        [Header("Forms")]
+        public static bool changingForm;
+        private bool buttonPressed;
+        [SerializeField] private bool defaultState;
+        [SerializeField] public Animator playerAnimator;
+        private float sniperCountdown;
+
+        
         
 
 
@@ -40,12 +44,10 @@ namespace TopDown.Shooting
             // TEST CODE 
             if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState)
             {
-                
                 ChangeForm();
             }
             else if (Input.GetKeyDown(KeyCode.L) && !changingForm && !defaultState)
-            {
-                
+            {                
                 ReturnToDefaultState();
             }
 
@@ -71,10 +73,10 @@ namespace TopDown.Shooting
 
                 if (cooldownTimer < cooldown) return;
 
-                GameObject bullet = Instantiate(bulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
+                GameObject bullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
                 bullet.GetComponent<Projectile>().ShootBullet(sFirepoint);
 
-                muzzleFlashAnimator.SetTrigger("shoot");
+                muzzleFlashAnimatorS.SetTrigger("shoot");
                 cooldownTimer = 0;
             }
             
@@ -82,25 +84,28 @@ namespace TopDown.Shooting
 
         private void ChangeForm()
         {
+            
             if (!changingForm)
             {
                 changingForm = true;
                 // ChangingForm set to FALSE in Animation Flag
                 defaultState = false;
                 playerAnimator.SetBool("IsDefault", false);
-                
+
             }
 
         }
 
         private void ReturnToDefaultState()
         {
+            
             if (!changingForm)
             {
                 changingForm = true;
                 // ChangingForm set to FALSE in Animation Flag
                 defaultState = true;
                 playerAnimator.SetBool("IsDefault", true);
+
             }
             
 
