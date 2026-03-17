@@ -26,14 +26,16 @@ public class PlayerHealth : MonoBehaviour
     private float iTime;
     [SerializeField] private bool playerInvincible = false;
     private CircleCollider2D playerCollider;
-
-    
+        
 
     [Header("Heat Meter")]
     public static bool meterPause;
     public Slider heatMeter;
     public Slider healingBMeter;
 
+    [SerializeField] private Image heatMeterFill;    
+    private Color defaultHUD = new Color32(255, 157, 0, 255);
+    private Color frozenHUD = new Color32(181, 235, 255, 255);
     
     private CinemachineImpulseSource impulseSource;
 
@@ -50,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
         isPlayerDead = false;
         meterPause = false;
         maxHeatValue = 20f;
-        heatValue = maxHeatValue;
+        heatValue = maxHeatValue;        
         playerCollider = GetComponent<CircleCollider2D>();  
         impulseSource = GetComponent<CinemachineImpulseSource>();
         
@@ -108,6 +110,14 @@ public class PlayerHealth : MonoBehaviour
     {
         heatMeter.value = heatValue;
         heatMeter.maxValue = maxHeatValue;
+        if (meterPause)
+        {
+            heatMeterFill.color = frozenHUD;
+        }
+        else
+        {
+            heatMeterFill.color = defaultHUD; ;
+        }
                
 
     }

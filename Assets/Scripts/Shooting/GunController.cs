@@ -15,6 +15,7 @@ namespace TopDown.Shooting
 
         [Header("Forms")]
          public static bool changingForm;
+        private bool buttonPressed;
         [SerializeField] private bool defaultState;
         [SerializeField] private Animator playerAnimator;
         private float sniperCountdown;
@@ -39,19 +40,21 @@ namespace TopDown.Shooting
             // TEST CODE 
             if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState)
             {
+                
                 ChangeForm();
             }
             else if (Input.GetKeyDown(KeyCode.L) && !changingForm && !defaultState)
             {
+                
                 ReturnToDefaultState();
             }
 
-            SniperForm();
+            //SniperForm();
         }
 
         private void Shoot()
         {
-            if (defaultState)
+            if (defaultState && UIManager.Instance.isPaused == false)
             {
                 if (cooldownTimer < cooldown) return;
 
@@ -61,7 +64,7 @@ namespace TopDown.Shooting
                 muzzleFlashAnimator.SetTrigger("shoot");
                 cooldownTimer = 0;
             }
-            else if (!defaultState)
+            else if (!defaultState && UIManager.Instance.isPaused == false)
             {
                 //GameObject sBullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
                 //sBullet.GetComponent<Projectile>().ShootBullet(sFirepoint);

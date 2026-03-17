@@ -14,8 +14,9 @@ public class UIManager : MonoBehaviour
     [Header("Screens")]
     [SerializeField] private GameObject playerHUD;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject endResultMenu;
 
-    public static bool isPaused;
+    public bool isPaused;
 
     [SerializeField] private PlayerRotation playerRotator; 
 
