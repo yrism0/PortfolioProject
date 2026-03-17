@@ -51,14 +51,20 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void Clicked()
+    {
+        Debug.Log("clickedwork");
+    }
+
     public void PauseGame()
     {
-        Time.timeScale = 0f;
+        Time.timeScale = 0f; 
         pauseMenu.SetActive(true);
         isPaused = true;
         playerRotator.enabled = false;
         HideHUD();
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void ResumeGame()
