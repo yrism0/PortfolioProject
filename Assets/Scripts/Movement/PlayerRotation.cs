@@ -16,7 +16,7 @@ namespace TopDown.Movement
         // Look at mouse position
         private void OnLook(InputValue value)
         {
-            if (UIManager.Instance.isPaused == false)
+            if (!UIManager.Instance.isPaused)
             {
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(value.Get<Vector2>());
                 LookAt(torso, mousePosition);

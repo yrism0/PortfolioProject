@@ -32223,7 +32223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19907127, g: 0.19486472, b: 0.2735849, a: 0.59607846}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -33421,7 +33421,7 @@ GameObject:
   - component: {fileID: 1855128436}
   - component: {fileID: 1855128435}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Resume Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35014,7 +35014,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &2054038609
 MonoBehaviour:
   m_ObjectHideFlags: 0

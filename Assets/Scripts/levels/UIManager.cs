@@ -57,6 +57,8 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(true);
         isPaused = true;
         playerRotator.enabled = false;
+        HideHUD();
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ResumeGame()
@@ -65,6 +67,7 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
         isPaused = false;
         playerRotator.enabled = true;
+        ShowHUD();
     }
 
     public void GoToMainMenu()
