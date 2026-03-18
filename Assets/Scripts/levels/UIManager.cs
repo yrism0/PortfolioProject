@@ -124,6 +124,7 @@ public class UIManager : MonoBehaviour
         yield return FadeManager.Instance.FadeOut();
         // Load the new scene
         SceneManager.LoadScene("endofdemo");
+    }
     public void HeatDeath()
     {
         heatText.text = ">DEAD///";
