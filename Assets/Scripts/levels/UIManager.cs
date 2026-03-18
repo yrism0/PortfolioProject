@@ -1,3 +1,4 @@
+using System.Collections;
 using TopDown.Movement;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject playerHUD;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject endResultMenu;
+    
 
     public bool isPaused;
 
@@ -51,11 +53,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void Clicked()
-    {
-        Debug.Log("clickedwork");
-    }
-
+    
     public void PauseGame()
     {
         Time.timeScale = 0f; 
@@ -83,7 +81,23 @@ public class UIManager : MonoBehaviour
         isPaused = false;
         SceneManager.LoadScene("main menu");
     }
+    public void Endresults()
+    {
+        Time.timeScale = 0f;
+        endResultMenu.SetActive(true);
+        isPaused = true;
+        playerRotator.enabled = false;
+        HideHUD();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 
+    public void GoToNextLevel()
+    {
+        // StartCoroutine(LoadSceneWithFade("endofdemo"));
+        SceneManager.LoadScene("endofdemo");
+
+    }
     public void HideHUD()
     {
         playerHUD.SetActive(false);
@@ -97,5 +111,13 @@ public class UIManager : MonoBehaviour
     public void replay()
     {
         SceneManager.LoadScene("LevelTest");
+    }
+
+    IEnumerator LoadSceneWithFade(string sceneName)
+    {
+        // Start the fade-out effect
+        yield return FadeManager.Instance.FadeOut();
+        // Load the new scene
+        SceneManager.LoadScene("endofdemo");
     }
 }
