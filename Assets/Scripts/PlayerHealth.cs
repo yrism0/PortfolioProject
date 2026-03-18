@@ -176,11 +176,16 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerDeath()
     {
         isPlayerDead = true;
+
         Instantiate(playerDeathFX, transform.position, Quaternion.identity);
         Instantiate(playerDeathSmoke, smokePoint.position, smokePoint.rotation);
+
         playerAnimator.SetTrigger("IsDead");
         plMove.movementSpeed = 0;
+
         UIManager.Instance.HeatDeath();
+        UIManager.Instance.ShowGameOverScreen();
+
         playerCollider.enabled = false;
 
     }

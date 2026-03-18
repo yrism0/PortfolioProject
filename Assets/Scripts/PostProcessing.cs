@@ -39,5 +39,15 @@ public class PostProcessing : MonoBehaviour
             chro.active = true;
             grain.active = true;
         }
+        else if (UIManager.Instance.isPaused)
+        {
+            chro.active = true;
+        }
+        else
+        {
+            vign.active = false;
+            chro.active = false;
+            grain.active = false;
+        }
     }
 }

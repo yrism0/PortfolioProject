@@ -14,11 +14,11 @@ public class levelchange : MonoBehaviour
 
    
 
-     void OnCollisionEnter2D(Collision2D coll)
+     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (coll.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            
+            Debug.Log("End Level");
             Manager.Endresults();
 
             
