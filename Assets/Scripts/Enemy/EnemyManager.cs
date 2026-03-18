@@ -106,6 +106,15 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    private void OnParticleCollision(GameObject other)
+    {
+        Debug.Log("Particle Hit");
+        if (other.tag == "pDeathParticle")
+        {
+            Die();
+        }
+    }
+
     private void Shoot()
     {
         if (timeToFire <= 0f)
@@ -165,7 +174,10 @@ public class EnemyManager : MonoBehaviour
 
     private void Die()
     {
-        PlayerHealth.instance.RestoreHealth(5);
+        if (!PlayerHealth.instance.isPlayerDead)
+        {
+            PlayerHealth.instance.RestoreHealth(5);
+        }
         CameraShakeManager.instance.CameraShake(impulseSource);
         animator.SetTrigger("isDead");
         isDead = true;

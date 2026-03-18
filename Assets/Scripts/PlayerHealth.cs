@@ -1,3 +1,4 @@
+using TopDown.Movement;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,8 +19,13 @@ public class PlayerHealth : MonoBehaviour
     private float lerpTimer;
     public float chipSpeed = 2f;
 
-    private bool isPlayerDead;
+    public bool isPlayerDead;
     [SerializeField] GameObject playerDeathFX;
+    [SerializeField] GameObject playerDeathSmoke;
+    [SerializeField] Transform smokePoint;
+    [SerializeField] Animator playerAnimator;
+    private PlayerMovement plMove;
+    private PlayerRotation plRotate;
 
     [Header("Invincibility Frames")]
     [SerializeField] private float iFrames;
@@ -56,6 +62,8 @@ public class PlayerHealth : MonoBehaviour
         heatValue = maxHeatValue;        
         playerCollider = GetComponent<CircleCollider2D>();  
         impulseSource = GetComponent<CinemachineImpulseSource>();
+        plMove = GetComponent<PlayerMovement>();
+        plRotate = GetComponent<PlayerRotation>();
         
     }
 
@@ -99,11 +107,11 @@ public class PlayerHealth : MonoBehaviour
         }
 
         // Player Death - Will be disabled for now
-        /*if (heatValue <= 0 && !isPlayerDead)
+        if (heatValue <= 0 && !isPlayerDead)
         {
-            isPlayerDead = true;
+            
             PlayerDeath();
-        }*/
+        }
         
     }
 
@@ -167,8 +175,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void PlayerDeath()
     {
+        isPlayerDead = true;
         Instantiate(playerDeathFX, transform.position, Quaternion.identity);
-        Destroy(player);
+        Instantiate(playerDeathSmoke, smokePoint.position, smokePoint.rotation);
+        playerAnimator.SetTrigger("IsDead");
+        plMove.movementSpeed = 0;
+        UIManager.Instance.HeatDeath();
+        playerCollider.enabled = false;
+
     }
     
 

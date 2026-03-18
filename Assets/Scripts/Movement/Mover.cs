@@ -6,7 +6,7 @@ namespace TopDown.Movement
     public class Mover : MonoBehaviour
     {
         public static bool speedon;
-        [SerializeField] private float movementSpeed;
+        [SerializeField] public float movementSpeed;
         private Rigidbody2D body;
         protected Vector3 currentInput;
 
@@ -34,6 +34,7 @@ namespace TopDown.Movement
          void Start()
         {
             speedon = false;
+            movementSpeed = 90;
         }
          void Update()
         {

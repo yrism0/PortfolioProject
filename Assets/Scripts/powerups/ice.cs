@@ -22,6 +22,7 @@ public class ice : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log(frozenTimer);
             StartCoroutine(iced());
             Destroy(iceup);
         }
@@ -33,6 +34,8 @@ public class ice : MonoBehaviour
         if (frozenTimer >= 10)
         {           
             PlayerHealth.meterPause = false;
+            frozenTimer = 0;
+
         }
         
         PlayerHealth.meterPause = true;

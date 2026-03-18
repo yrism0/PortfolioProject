@@ -14,6 +14,13 @@ public class LegsAnimation : MonoBehaviour
 
     private void Update()
     {
-        legsAnimator.SetBool("moving", playerMover.CurrentInput != Vector3.zero);
+        if (!UIManager.Instance.isPaused && !PlayerHealth.instance.isPlayerDead)
+        { 
+            legsAnimator.SetBool("moving", playerMover.CurrentInput != Vector3.zero);        
+        }
+        if (PlayerHealth.instance.isPlayerDead)
+        {
+            legsAnimator.SetBool("moving", false);
+        }
     }
 }
