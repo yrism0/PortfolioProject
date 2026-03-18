@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   lifetime: 5
-  impactEffect: {fileID: 6213540237448775962, guid: b8ba1be0f8b69bc429b484336a968099, type: 3}
+  impactEffect: {fileID: 878868126184085174, guid: b8ba1be0f8b69bc429b484336a968099, type: 3}
 --- !u!58 &4128215006444745682
 CircleCollider2D:
   m_ObjectHideFlags: 0

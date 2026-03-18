@@ -40,6 +40,7 @@ namespace TopDown.Shooting
         private void Update()
         {
             cooldownTimer += Time.deltaTime;
+            sniperCountdown += Time.deltaTime;
 
             // TEST CODE 
             if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState)
@@ -116,11 +117,11 @@ namespace TopDown.Shooting
             ChangeForm();
             if (!defaultState)
             {
-                sniperCountdown += Time.deltaTime;
+                sniperCountdown = 0;
                 if (sniperCountdown >= 5)
                 {
                     ReturnToDefaultState();
-                    sniperCountdown = 0;
+                    
                 }
             }
             

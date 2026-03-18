@@ -186,6 +186,7 @@ public class EnemyManager : MonoBehaviour
         speed = 0f;
         rotateSpeed = 0f;
         enemySpawn.enemiesSpawned--;
+        agent.enabled = false;
     }
 
 }

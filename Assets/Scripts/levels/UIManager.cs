@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject playerHUD;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject endResultMenu;
+    [SerializeField] private GameObject gameOverScreen;
     
 
     public bool isPaused;
@@ -129,5 +130,10 @@ public class UIManager : MonoBehaviour
     {
         heatText.text = ">DEAD///";
         heatText.color = Color.red;
+    }
+
+    public void ShowGameOverScreen()
+    {
+        gameOverScreen.SetActive(true);
     }
 }
