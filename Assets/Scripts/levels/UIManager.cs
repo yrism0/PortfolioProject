@@ -20,7 +20,12 @@ public class UIManager : MonoBehaviour
 
     public bool isPaused;
 
-    [SerializeField] private PlayerRotation playerRotator; 
+    [SerializeField] private PlayerRotation playerRotator;
+
+    [SerializeField] private Text heatText;
+    private Color defaultTextColor = new Color32(50, 50, 50, 255);
+
+
 
 
 
@@ -119,5 +124,9 @@ public class UIManager : MonoBehaviour
         yield return FadeManager.Instance.FadeOut();
         // Load the new scene
         SceneManager.LoadScene("endofdemo");
+    public void HeatDeath()
+    {
+        heatText.text = ">DEAD///";
+        heatText.color = Color.red;
     }
 }

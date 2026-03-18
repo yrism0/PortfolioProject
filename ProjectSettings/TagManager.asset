@@ -9,6 +9,7 @@ TagManager:
   - eBullet
   - Wall
   - pBulletS
+  - pDeathParticle
   layers:
   - Default
   - TransparentFX
