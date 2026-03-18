@@ -23,8 +23,18 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private PlayerRotation playerRotator;
 
+    [Header("HUD")]
     [SerializeField] private Text heatText;
     private Color defaultTextColor = new Color32(50, 50, 50, 255);
+    
+    [SerializeField] public GameObject ammoUI;
+    [SerializeField] public Slider shotSlider;
+    [SerializeField] public Slider timerSlider;
+    [SerializeField] public Slider cooldownSlider;
+    [SerializeField] public Image cooldownFill;
+
+
+
 
 
 
@@ -136,4 +146,20 @@ public class UIManager : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
+
+    public void HideGameOverScreen()
+    {
+        gameOverScreen.SetActive(false);
+    }
+
+    public void ShowAmmoUI()
+    {
+        ammoUI.SetActive(true);
+    }
+
+    public void HideAmmoUI()
+    {
+        ammoUI.SetActive(false);
+    }
 }
+

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace TopDown.Shooting
@@ -17,6 +18,9 @@ namespace TopDown.Shooting
         [SerializeField] private Animator muzzleFlashAnimatorS;
         [SerializeField] private Transform sFirepoint;
         [SerializeField] private GameObject sBulletPrefab;
+        private float sniperTimer;
+        private float shotsLeft;
+        
 
         [Header("Forms")]
         public static bool changingForm;
@@ -24,9 +28,12 @@ namespace TopDown.Shooting
         [SerializeField] private bool defaultState;
         [SerializeField] public Animator playerAnimator;
         private float sniperCountdown;
+        private bool onCooldown;
+         
+        private Color defaultEnergy = new Color32(0, 255, 249, 255);
 
-        
-        
+
+
 
 
         // Shoot Point
@@ -35,22 +42,34 @@ namespace TopDown.Shooting
         {
             defaultState = true;
             playerAnimator.SetBool("IsDefault", true);
+            sniperTimer = 5;
+            sniperCountdown = 5;
+            shotsLeft = 3;
+            onCooldown = false;
         }
 
         private void Update()
         {
             cooldownTimer += Time.deltaTime;
-            sniperCountdown += Time.deltaTime;
+            
+            UpdateAmmoUI();
+            CheckForm();
+            
+            
 
             // TEST CODE 
-            if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState)
+            if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState && !onCooldown)
             {
                 SniperForm();
             }
-            else if (Input.GetKeyDown(KeyCode.L) && !changingForm && !defaultState)
+            else if (Input.GetKeyDown(KeyCode.P) && onCooldown)
+            {
+                StartCoroutine(EnergyCooldown());
+            }
+            /*else if (Input.GetKeyDown(KeyCode.L) && !changingForm && !defaultState)
             {                
                 ReturnToDefaultState();
-            }
+            }*/
 
             //SniperForm();
         }
@@ -76,6 +95,7 @@ namespace TopDown.Shooting
 
                 GameObject bullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
                 bullet.GetComponent<Projectile>().ShootBullet(sFirepoint);
+                shotsLeft--;
 
                 muzzleFlashAnimatorS.SetTrigger("shoot");
                 cooldownTimer = 0;
@@ -88,6 +108,8 @@ namespace TopDown.Shooting
             
             if (!changingForm)
             {
+                UIManager.Instance.ShowAmmoUI();
+                shotsLeft = 3;
                 changingForm = true;
                 // ChangingForm set to FALSE in Animation Flag
                 defaultState = false;
@@ -99,9 +121,13 @@ namespace TopDown.Shooting
 
         private void ReturnToDefaultState()
         {
-            
+            //Debug.Log("Check1");
             if (!changingForm)
             {
+                sniperCountdown = 0;
+                onCooldown = true;
+                UIManager.Instance.HideAmmoUI();
+                //Debug.Log("Check2");
                 changingForm = true;
                 // ChangingForm set to FALSE in Animation Flag
                 defaultState = true;
@@ -114,17 +140,48 @@ namespace TopDown.Shooting
 
         private void SniperForm()
         {
-            ChangeForm();
+            ChangeForm();       
+        }
+
+        private void CheckForm()
+        {
             if (!defaultState)
             {
-                sniperCountdown = 0;
+                
+                sniperTimer -= Time.deltaTime;
+                if (sniperTimer <= 0 || shotsLeft == 0)
+                {
+                    
+                    ReturnToDefaultState ();
+                    sniperTimer = 5;
+                    //Debug.Log("Check0");
+                }
+            }
+            if (onCooldown)
+            {
+                sniperCountdown += Time.deltaTime;
                 if (sniperCountdown >= 5)
                 {
-                    ReturnToDefaultState();
+                    onCooldown = false;
                     
                 }
             }
-            
+
+
+        }
+
+        IEnumerator EnergyCooldown()
+        {
+            UIManager.Instance.cooldownFill.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            UIManager.Instance.cooldownFill.color = defaultEnergy;
+        }
+
+        private void UpdateAmmoUI()
+        {
+            UIManager.Instance.timerSlider.value = sniperTimer;
+            UIManager.Instance.shotSlider.value = shotsLeft;
+            UIManager.Instance.cooldownSlider.value = sniperCountdown;
         }
         
         #region Input
