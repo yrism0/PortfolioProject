@@ -15,24 +15,28 @@ public class HUDManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!mapOpen)
+        if (!UIManager.Instance.isPaused && !PlayerHealth.instance.isPlayerDead)
         {
-            if (Input.GetKeyDown(KeyCode.Tab))
+            if (!mapOpen)
             {
-                OpenMap();
+                if (Input.GetKeyDown(KeyCode.Tab))
+                {
+                    OpenMap();
                 
+                }
             }
-        }
-        else if (mapOpen)
-        {
-            if (Input.GetKeyUp(KeyCode.Tab))
+            else if (mapOpen)
             {
-                CloseMap();
+                if (Input.GetKeyUp(KeyCode.Tab))
+                {
+                    CloseMap();
+                }
             }
-        }
-        else
-        {
-            return;
+            else
+            {
+                return;
+            }
+
         }
     }
 
