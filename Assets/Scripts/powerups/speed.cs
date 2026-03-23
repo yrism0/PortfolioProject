@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class speed : MonoBehaviour
 {
+    private powerupmanagement pManager;
     public GameObject speedup;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        pManager = GetComponentInParent<powerupmanagement>();
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class speed : MonoBehaviour
         {
             StartCoroutine(hotfeet());
             Destroy(speedup);
+            Instantiate(pManager.pickUpEffect, transform.position, Quaternion.identity);
         }
     }
 

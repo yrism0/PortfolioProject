@@ -58,11 +58,11 @@ namespace TopDown.Shooting
             
 
             // TEST CODE 
-            if (Input.GetKeyDown(KeyCode.P) && !changingForm && defaultState && !onCooldown)
+            if (Input.GetKeyDown(KeyCode.Mouse1) && !changingForm && defaultState && !onCooldown)
             {
                 SniperForm();
             }
-            else if (Input.GetKeyDown(KeyCode.P) && onCooldown)
+            else if (Input.GetKeyDown(KeyCode.Mouse1) && onCooldown)
             {
                 StartCoroutine(EnergyCooldown());
             }
