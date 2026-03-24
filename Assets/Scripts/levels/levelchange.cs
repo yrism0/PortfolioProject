@@ -18,6 +18,7 @@ public class levelchange : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            
             Debug.Log("End Level");
             Manager.Endresults();
 
