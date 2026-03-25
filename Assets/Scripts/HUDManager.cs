@@ -15,7 +15,7 @@ public class HUDManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!UIManager.Instance.isPaused && !PlayerHealth.instance.isPlayerDead)
+        if (!UIManager.Instance.isPaused && !PlayerHealth.instance.isPlayerDead && !levelchange.LevelFinished)
         {
             if (!mapOpen)
             {
