@@ -190,5 +190,10 @@ public class PlayerHealth : MonoBehaviour
 
     }
     
+    public void DisablePlayerMovement()
+    {
+        plMove.movementSpeed = 0;
+        playerCollider.enabled = false;
+    }
 
 }

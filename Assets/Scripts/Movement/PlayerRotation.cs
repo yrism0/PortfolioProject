@@ -16,7 +16,7 @@ namespace TopDown.Movement
         // Look at mouse position
         private void OnLook(InputValue value)
         {
-            if (!UIManager.Instance.isPaused && !PlayerHealth.instance.isPlayerDead)
+            if (!UIManager.Instance.isPaused && !PlayerHealth.instance.isPlayerDead && !levelchange.LevelFinished)
             {
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(value.Get<Vector2>());
                 LookAt(torso, mousePosition);
