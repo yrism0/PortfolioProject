@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject endResultMenu;
     [SerializeField] private GameObject gameOverScreen;
+    public GameTimer gameTimer;
     
 
     public bool isPaused;
@@ -49,6 +50,7 @@ public class UIManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       gameTimer = GetComponent<GameTimer>();
         
     }
 
@@ -100,12 +102,14 @@ public class UIManager : MonoBehaviour
     public void Endresults()
     {
         Time.timeScale = 0f;
+        gameTimer.SetFinalTime();
         endResultMenu.SetActive(true);
         isPaused = true;
         playerRotator.enabled = false;
         HideHUD();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+       
     }
 
     public void GoToNextLevel()
@@ -145,6 +149,7 @@ public class UIManager : MonoBehaviour
     public void ShowGameOverScreen()
     {
         gameOverScreen.SetActive(true);
+        gameTimer.SetFinalTime();
     }
 
     public void HideGameOverScreen()
