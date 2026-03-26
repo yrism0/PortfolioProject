@@ -18,8 +18,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject endResultMenu;
     [SerializeField] private GameObject gameOverScreen;
     public GameTimer gameTimer;
-    
 
+    public bool isEnded;
     public bool isPaused;
 
     [SerializeField] private PlayerRotation playerRotator;
@@ -51,13 +51,14 @@ public class UIManager : MonoBehaviour
     void Start()
     {
        gameTimer = GetComponent<GameTimer>();
-        
+        isEnded = false;
+     
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !isEnded)
         {
             if (isPaused == false)
             {
@@ -109,6 +110,7 @@ public class UIManager : MonoBehaviour
         HideHUD();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        isEnded = true;
        
     }
 
@@ -148,8 +150,10 @@ public class UIManager : MonoBehaviour
 
     public void ShowGameOverScreen()
     {
+        HideHUD();
         gameOverScreen.SetActive(true);
         gameTimer.SetFinalTime();
+        isEnded = true;
     }
 
     public void HideGameOverScreen()
