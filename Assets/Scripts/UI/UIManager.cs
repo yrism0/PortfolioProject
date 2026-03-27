@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] public Slider timerSlider;
     [SerializeField] public Slider cooldownSlider;
     [SerializeField] public Image cooldownFill;
-
+    public GameObject TText;
 
 
 
@@ -52,7 +52,8 @@ public class UIManager : MonoBehaviour
     {
        gameTimer = GetComponent<GameTimer>();
         isEnded = false;
-     
+        TText.SetActive(true);
+
     }
 
     // Update is called once per frame
@@ -103,6 +104,7 @@ public class UIManager : MonoBehaviour
     public void Endresults()
     {
         Time.timeScale = 0f;
+        TText.SetActive(false);
         gameTimer.SetFinalTime();
         endResultMenu.SetActive(true);
         isPaused = true;
@@ -151,6 +153,7 @@ public class UIManager : MonoBehaviour
     public void ShowGameOverScreen()
     {
         HideHUD();
+        TText.SetActive(false);
         gameOverScreen.SetActive(true);
         gameTimer.SetFinalTime();
         isEnded = true;
