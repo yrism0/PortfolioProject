@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     [Header("Levels")]
-    public string level1 = "Level1";
-    public string level2 = "Level2";
-    public string level3 = "Level3";
-    public string level4 = "Level4";
-    public string level5 = "Level5";
-    public string mainMenu = "MainMenu";
+    public string level1 = "Level 1";
+    public string level2 = "Level 2";
+    public string level3 = "Level 3";
+    public string level4 = "Level 4";
+    public string level5 = "Level 5";
+    public string mainMenu = "Main Menu";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
