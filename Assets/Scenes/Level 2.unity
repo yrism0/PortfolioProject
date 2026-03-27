@@ -46160,6 +46160,7 @@ MonoBehaviour:
   timerSlider: {fileID: 415297031}
   cooldownSlider: {fileID: 1820113}
   cooldownFill: {fileID: 136147281}
+  TText: {fileID: 1561487358}
 --- !u!114 &2054038613
 MonoBehaviour:
   m_ObjectHideFlags: 0

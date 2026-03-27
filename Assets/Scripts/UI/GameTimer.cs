@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     public static GameTimer Instance;
+   
+    
 
     private float gameTimer;
     private float finalGameTime;
