@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
         
         isPlayerDead = false;
         meterPause = false;
-        maxHeatValue = 20f;
+        maxHeatValue = 15f;
         heatValue = maxHeatValue;        
         playerCollider = GetComponent<CircleCollider2D>();  
         impulseSource = GetComponent<CinemachineImpulseSource>();

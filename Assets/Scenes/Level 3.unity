@@ -33763,6 +33763,226 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d37cba345de3b24cb558f6cf7458997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1426365632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426365633}
+  - component: {fileID: 1426365635}
+  - component: {fileID: 1426365634}
+  m_Layer: 5
+  m_Name: DeathArt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1426365633
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426365632}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1581776817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 572.49493, y: -134.83632}
+  m_SizeDelta: {x: 2052.149, y: 1357.7124}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1426365634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426365632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                                                   
+    \r\n                                                                         
+    :::  :: :::                                                                              
+    \r\n                                                                       ::::  
+    :: :: ::                                                                             
+    \r\n                                                                     :::::::: 
+    :: :::::                                                                            
+    \r\n                                                                    ::::
+    :::::  :    ::::                                                                          
+    \r\n                                                                  ::::::::
+    :::  :      ::::                                                                        
+    \r\n                                                                 :::::  :
+    : ::  ::       :::::                                                                     
+    \r\n                                                                 :::    
+    : ::: ::          :::::                                                                   
+    \r\n                                                               ::::       
+    ::: :            :::::::                                                                
+    \r\n                                                              ::::        
+    :::::                :: ::                                                              
+    \r\n                                                            :::::         
+    ::::                   :: ::                                                            
+    \r\n                                                            ::::         
+    ::::                      :  ::                                                          
+    \r\n                                                            ::::::      
+    ::::                         :: ::                                                        
+    \r\n                                                           :::::::      ::::                           
+    :: ::                                                       \r\n                                                         
+    ::::::       ::::                               :: ::                                                    
+    \r\n                                                        ::::::::       :::                                 
+    :: ::                                                   \r\n                                                      
+    :::::::         ::     :                              ::: :                                                 
+    \r\n                                                       :: :: :    :::      
+    ::                                 :  ::                                               
+    \r\n                                                       ::   ::::: : :::  
+    :::                                    :  :                                              
+    \r\n                                                                      ::::::                                     
+    :: ::                                             \r\n                                                      
+    :   : :       :::                                           :: ::                                           
+    \r\n                                                      :::::::::  ::::                                               
+    :: :                                           \r\n                                                     
+    :::: : :::::     ::::                                            : ::                                        
+    \r\n                                                       ::            :::::                                            
+    :::::                                        \r\n                                          
+    ::          :::      :::::    :                            :::::::::::::      
+    : :                 ::                    \r\n                                     
+    ::::::             ::::::::       ::                                       ::::::::::::::        
+    ::::::                      \r\n                                    ::::::::::             
+    :     ::::::::                                                 :::::::::::::::::                       
+    \r\n                                   :::::::::: :                :::::    :::                                         
+    ::::::::::::::  ::::                           \r\n                                  
+    :  ::::::  ::             :::::  :::  ::                                  ::::::::::::::::::::::::::::                          
+    \r\n                                   : ::::: : ::::           ::::   ::   
+    ::                          ::::::::::::::      ::::::::::::                              
+    \r\n                                   :: :     :  :           :::   ::     
+    ::                  :::::::::::           ::::    :::::                                   
+    \r\n                                   :: ::     ::           :::   ::                 
+    :::::::::::::            :::      :::::::                                      
+    \r\n                                   ::  ::   ::           ::::    :           
+    :: :::::::::              ::::      :::::::                                          
+    \r\n                                    :   ::  ::           ::::     :::::::::::::::                 
+    ::::        :::::::                                              \r\n                                    
+    ::     ::          ::: :       :: :::::::                 ::::         :::::::                                                
+    \r\n                                      ::     ::         ::: :           ::
+    :::              ::           :::::::                                                   
+    \r\n                                        :::  :::        :::::::::::::  ::::::: 
+    ::       ::            ::::::                                                      
+    \r\n                                         :::  :::       ::: :   :  :::::: 
+    :::::::::: ::            ::::::                                                         
+    \r\n                                           ::: :::       ::::  ::: ::::: 
+    ::::::  ::              ::::::                                                           
+    \r\n                                            ::: :::       :::  ::   :::: 
+    :::::  ::            ::::::                                                              
+    \r\n                                             ::: :::     ::::::::   :::  
+    ::::   ::           :::::                                                                
+    \r\n                                              :::::::   :::::::::   :::  
+    :::   ::           ::::                                                                  
+    \r\n                                               :::::::   ::  ::::   ::   
+    ::   :::         :::                                                                     
+    \r\n                                                 ::::::  ::   :::   ::  
+    :::  :::: ::::  ::::                                                                      
+    \r\n                                                  :::::  ::    ::   :   
+    ::   ::::  :::::::                                                                        
+    \r\n                                                    :::  :::   ::   ::  ::  
+    ::::::: :::::                                                                         
+    \r\n                                                     :::  ::    :       :   
+    :::  ::   ::                                                                          
+    \r\n                                                        : ::                 
+    :::::   :::                                                                          
+    \r\n                                                           :                  
+    ::   :::                                                                            
+    \r\n                                                           ::                    
+    :::                                                                              
+    \r\n                                                           ::                   
+    :::                                                                               
+    \r\n                                                           :::                 
+    :::                                                                                
+    \r\n                                                            ::                
+    :::                                                                                 
+    \r\n                                                            :::              
+    :::                                                                                  
+    \r\n                                                             ::              
+    ::                                                                                   
+    \r\n                                                             :::            
+    :::                                                                                   
+    \r\n                                                             ::::        
+    : :::                                                                                    
+    \r\n                                                              :::        
+    ::::                                                                                     
+    \r\n                                                              :::        
+    ::::                                                                                     
+    \r\n                                                               :::      
+    :::::                                                                                     
+    \r\n                                                               ::::     
+    ::::                                                                                      
+    \r\n                                                                ::::    
+    ::::                                                                                      
+    \r\n                                                                :: ::   :::::                                                                                      
+    \r\n                                                                :: ::  ::::::                                                                                      
+    \r\n                                                                 :: :  ::::::                                                                                      
+    \r\n                                                                 :: :  :::::                                                                                       
+    \r\n                                                                  :::  :::::                                                                                       
+    \r\n                                                                  :::: :::::                                                                                       
+    \r\n                                                                   ::: :::::                                                                                       
+    \r\n                                                                    :::::                                                                                          
+    \r\n                                                                    ::::                                                                                           
+    \r\n                                                                      ::                                                                                           
+    \r\n                                                                                                                                                                   
+    \r\n                                                                                                                                           "
+--- !u!222 &1426365635
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426365632}
+  m_CullTransparentMesh: 1
 --- !u!1 &1433428189
 GameObject:
   m_ObjectHideFlags: 0
@@ -34388,6 +34608,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580130137}
   m_CullTransparentMesh: 1
+--- !u!1 &1581776816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581776817}
+  m_Layer: 5
+  m_Name: DeathDetail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1581776817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581776816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2126255371}
+  - {fileID: 1426365633}
+  m_Father: {fileID: 1640483260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -567.9697, y: 136.39996}
+  m_SizeDelta: {x: 561.05994, y: 976.8351}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1604967491
 GameObject:
   m_ObjectHideFlags: 0
@@ -34732,6 +34989,7 @@ RectTransform:
   - {fileID: 308670444}
   - {fileID: 164968370}
   - {fileID: 104775146}
+  - {fileID: 1581776817}
   m_Father: {fileID: 1228605134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -38563,6 +38821,125 @@ Transform:
   m_Children: []
   m_Father: {fileID: 116411692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2126255370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126255371}
+  - component: {fileID: 2126255373}
+  - component: {fileID: 2126255372}
+  m_Layer: 5
+  m_Name: TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2126255371
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126255370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1581776817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -129.8865, y: -135.76587}
+  m_SizeDelta: {x: 522.0436, y: 1076.0066}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2126255372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126255370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.16470589}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5678e98e57975c441846453535313f51, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "---------=================------------------------===\t\n         ---------===============----------------------=========-\n========---------===--=-=--------------==-------------==============\n   
+    -------======= - FATAL ERROR - -=====-- -===========-------\n       ============----------
+    =============== -------- -- - -- --------\n...--- _______ --===========- -------------------==========------\n-----------===============-==-=-=-=----
+    HEAT READI--NGS -=-= \n============= -- -=-- -- -CRITICAL -=-==========- ------=
+    =-=\n_______ -- - 01000100 -=--=-= ====  01000101 -=- =-=\n       ==== =-01000001
+    01010100  -=-=-= === __ =-= -01001000\n -----------             -------------
+    --------------- -------------- --------- =\n==== ------------  ============ -----
+    ======== -------- ----\n         ============ --------- ---- =- -- =__ -- ==
+    - --- --\n                        ___=== =- --      -- --====== -- -==-=\n                             
+    -- = =-= -- --- === -----= ==    == --==-\n                       - -       ======
+    - -- ===- -=- -=-=\n                                     ---- ===- =- =-=- ---            
+    --      --====--- \n =====        ---------------- -= == - ------------ === 
+    -=-= - -- --=-=\n --===FAILURE= -= ==- == ---------- = == =------------------=
+    =- =-\n-- == -------- -= --       ---== -- =        --=                --=       
+    --==--\n               ---=  -- ===            ----           =---=-        
+    --=--\n- =- -- =- -- =       -=- --=        --===--=-         -=- =- --=----=\n                            
+    --=- -=-=- -=-=----FAILURE-=-=----\n          -=---=-- -=- =-- =-=-- --= -=--
+    -=-=--=-=-=-- \n           -=-=- ---= -------= -=-- =-=- =-------- ==-=-\n     
+    -=-=- =--- =- =-=FAILURE- =-=---=  -=-=---=- =-----=- -=-=- \n                                            
+    -=-= -=-=- =---= -=---=- --=-=-=-- -=-====-=--=-=-\n              =-=- - -           
+    -=-= -=-=- --         -=-=- --= -=-= -=-=- =--=- =-=-= - --\n    -=-=- -=- --=-
+    -==-=- --               =-=-- -=-=-=-- =-==-_____\n            =-=-=-=- == =--=
+    -=-=-=- =           ========= --==-=-----_\n              -=-=-------________+-=-
+    --==- -=-=-=- -=-=----=--___\n              =-=-=--=-=-=---=-=-= -- ----=----
+    =-=- MISSION FAILED- =-\n -=-=- =--       =---=-=-  -=-- =-=- =- =-=-= -= -=-=-=-=-=-=-=--\n
+    --             --=______ -=- --= ==-=- - ----- == --- =- =-= =-=-=-=-\n-= -=         
+    =-=-         =-=-=-           =-=-       ---- =--=-=- =-\n                   
+    --==-= - =-= FAILURE -= =-=- -__--_\n                            _____ ----_
+    _ -- -== __- -- --= \n                                 -= ------- ==- -=- --
+    -=-=- ---\n              --= -=- -=- -=- --= -=-___ --=- -=-=-=-=-=-=-\n    -=-
+    =-=- -- --              -=-= --=- -=-=- =- =- -=-=-=\n               -=-= =-       
+    --=-==-=-----___- =- =-= -\n  --= --            -=-=---- -======= - =-=- ---
+    -- --- =---\n            --=---=- ------- =-=-=--- --=- ---= -=-=-- --=-=-\n               
+    --=-= -== -=-=-=-= -=---- ==---=-=-=- \n              ---=- FAILURE -=-=-           
+    ------- -     -- \n                      ------- -- - -- === -- == --     -- 
+    - -\n                                  --= -=---- =---=- --=-\n                               
+    --= =- - - -          -=- -= =-  -- - - - \n                 - -= -= - - - -=
+    - ---=--=- -- - =-= -=- -\n           -=-=-=            ===-= -      -=-= -=-
+    =--- ==- -=--\n-=-=      -=- - -=- =- - -- - =             -=--=-=-- =- -- -=
+    -=- =- -=\n         -=- - -= -        -__   -= -=   = - =- =- =-- =- =---=- =-=-\n 
+    ____ - =-- =- =- =______________________________\n_______________________________________\n__________________________________\n____________________________\n______________________\n_______________\n___________\n________\n"
+--- !u!222 &2126255373
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126255370}
+  m_CullTransparentMesh: 1
 --- !u!1 &2128139050
 GameObject:
   m_ObjectHideFlags: 0
