@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     public static GameTimer Instance;
-   
-    
+
+    private Color frozenTime = new Color(181, 235, 255, 255);
 
     private float gameTimer;
     private float finalGameTime;
@@ -27,8 +27,16 @@ public class GameTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameTimer += Time.deltaTime;
-       
+        if (!PlayerHealth.meterPause)
+        {
+            gameTimer += Time.deltaTime;
+        }
+        else
+        {
+            return;
+        }
+
+        UpdateUIColour();
         SetUIText();
     }
 
@@ -60,6 +68,20 @@ public class GameTimer : MonoBehaviour
         finalTimerText.text = string.Format("{0:00}:{1:00}.{2:00}", finalMin, finalSec, finalMSec);
         deathTimerText.text = string.Format("{0:00}:{1:00}.{2:00}", finalMin, finalSec, finalMSec);
         yield return null;
+    }
+
+    private void UpdateUIColour()
+    {
+        if (PlayerHealth.meterPause)
+        {
+            timerText.color = frozenTime;
+        }
+        else
+        {
+            timerText.color = Color.white;
+            
+        }
+        
     }
 
 }
