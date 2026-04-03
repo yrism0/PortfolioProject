@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     public static GameTimer Instance;
+    public float ElapsedTime { get; private set; } // Property to access the elapsed time within level change script
 
     private Color frozenTime = new Color(181, 235, 255, 255);
 

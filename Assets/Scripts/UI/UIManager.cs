@@ -33,6 +33,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] public Slider timerSlider;
     [SerializeField] public Slider cooldownSlider;
     [SerializeField] public Image cooldownFill;
+    public Text gradeText;
     public GameObject TText;
 
 
@@ -107,6 +108,7 @@ public class UIManager : MonoBehaviour
         TText.SetActive(false);
         gameTimer.SetFinalTime();
         endResultMenu.SetActive(true);
+        gradeText.text = "-- GRADE: " + levelchange.CalculateGrade(gameTimer.ElapsedTime) + " --";
         isPaused = true;
         playerRotator.enabled = false;
         HideHUD();
