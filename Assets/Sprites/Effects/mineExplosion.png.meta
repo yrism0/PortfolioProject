@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 1788d7f32ad1b534d8b9109de3728611
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4979817583089069292
+    second: mineExplosion_0
+  - first:
+      213: -33852088025353329
+    second: mineExplosion_1
+  - first:
+      213: 111513845462347610
+    second: mineExplosion_2
+  - first:
+      213: -911457784386163961
+    second: mineExplosion_3
+  - first:
+      213: 3963691927582861177
+    second: mineExplosion_4
+  - first:
+      213: 6295583754770013021
+    second: mineExplosion_5
+  - first:
+      213: -8015851975079806301
+    second: mineExplosion_6
+  - first:
+      213: 4928754190447151444
+    second: mineExplosion_7
+  - first:
+      213: -8853378832171584079
+    second: mineExplosion_8
+  - first:
+      213: 4830448191474347771
+    second: mineExplosion_9
+  - first:
+      213: -5055310332175084726
+    second: mineExplosion_10
+  - first:
+      213: 2825528725587034706
+    second: mineExplosion_11
+  - first:
+      213: 31832718532473251
+    second: mineExplosion_12
+  - first:
+      213: 4438212001867518843
+    second: mineExplosion_13
+  - first:
+      213: 8911711163637007642
+    second: mineExplosion_14
+  - first:
+      213: 7056099867644440323
+    second: mineExplosion_15
+  - first:
+      213: -1236715815703731448
+    second: mineExplosion_16
+  - first:
+      213: 5983383270110310473
+    second: mineExplosion_17
+  - first:
+      213: 6065731694075425512
+    second: mineExplosion_18
+  - first:
+      213: 1856402898977883445
+    second: mineExplosion_19
+  - first:
+      213: 3683122616189625925
+    second: mineExplosion_20
+  - first:
+      213: -6120686920106063894
+    second: mineExplosion_21
+  - first:
+      213: -3711420457394651842
+    second: mineExplosion_22
+  - first:
+      213: 6297392429081053033
+    second: mineExplosion_23
+  - first:
+      213: -4013623312264982307
+    second: mineExplosion_24
+  - first:
+      213: -1070457287719650714
+    second: mineExplosion_25
+  - first:
+      213: 8842292166124968650
+    second: mineExplosion_26
+  - first:
+      213: 8162958143671376177
+    second: mineExplosion_27
+  - first:
+      213: 1789370801448744380
+    second: mineExplosion_28
+  - first:
+      213: 6557319782764377116
+    second: mineExplosion_29
+  - first:
+      213: -7225073856952833013
+    second: mineExplosion_30
+  - first:
+      213: 6156896616281487417
+    second: mineExplosion_31
+  - first:
+      213: 5211353838178425862
+    second: mineExplosion_32
+  - first:
+      213: 6116098694459747391
+    second: mineExplosion_33
+  - first:
+      213: -7658574277804202542
+    second: mineExplosion_34
+  - first:
+      213: -182980103472302315
+    second: mineExplosion_35
+  - first:
+      213: -7876158668213132556
+    second: mineExplosion_36
+  - first:
+      213: -3960521356469791973
+    second: mineExplosion_37
+  - first:
+      213: 6293518397496098311
+    second: mineExplosion_38
+  - first:
+      213: 3849886446176049517
+    second: mineExplosion_39
+  - first:
+      213: -4022760633912655411
+    second: mineExplosion_40
+  - first:
+      213: 5113023566475794064
+    second: mineExplosion_41
+  - first:
+      213: 8378565002151324666
+    second: mineExplosion_42
+  - first:
+      213: 7773427920448951908
+    second: mineExplosion_43
+  - first:
+      213: 1896499960294629057
+    second: mineExplosion_44
+  - first:
+      213: -2607107251515631773
+    second: mineExplosion_45
+  - first:
+      213: 8433194816978467410
+    second: mineExplosion_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mineExplosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceca44625bddb1540800000000000000
+      internalID: 4979817583089069292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83f75e84bbb78ff0800000000000000
+      internalID: -33852088025353329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f225a604d2c8100800000000000000
+      internalID: 111513845462347610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70be5e569f9d953f0800000000000000
+      internalID: -911457784386163961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977e8aebeccd10730800000000000000
+      internalID: 3963691927582861177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b59ccc1186e5750800000000000000
+      internalID: 6295583754770013021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa31453919f1c090800000000000000
+      internalID: -8015851975079806301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45902d292d3766440800000000000000
+      internalID: 4928754190447151444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5337efbda722580800000000000000
+      internalID: -8853378832171584079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mineExplosion_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfea1ce8903390340800000000000000
+      internalID: 4830448191474347771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b371273fb0e6bc94caed7995fb2bb5f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mineExplosion_0: 4979817583089069292
+      mineExplosion_1: -33852088025353329
+      mineExplosion_2: 111513845462347610
+      mineExplosion_3: -911457784386163961
+      mineExplosion_4: 3963691927582861177
+      mineExplosion_5: 6295583754770013021
+      mineExplosion_6: -8015851975079806301
+      mineExplosion_7: 4928754190447151444
+      mineExplosion_8: -8853378832171584079
+      mineExplosion_9: 4830448191474347771
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

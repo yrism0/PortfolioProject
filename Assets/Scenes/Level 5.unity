@@ -51334,6 +51334,7 @@ GameObject:
   - component: {fileID: 1423088243}
   - component: {fileID: 1423088244}
   - component: {fileID: 1423088245}
+  - component: {fileID: 1423088246}
   m_Layer: 6
   m_Name: Torso
   m_TagString: Untagged
@@ -51451,6 +51452,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d37cba345de3b24cb558f6cf7458997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1423088246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423088241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8180c22c195dc5244b02feccf91356f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstantiatePrefab: {fileID: 6426759481921244769, guid: 1e664731dc2bff145a9693969d13404f, type: 3}
+  player: {fileID: 841300858}
 --- !u!1 &1440672437
 GameObject:
   m_ObjectHideFlags: 0
@@ -54307,6 +54322,7 @@ MonoBehaviour:
   level4: Level 4
   level5: Level 5
   mainMenu: Main Menu
+  endScene: EndScene
 --- !u!4 &1824720773
 Transform:
   m_ObjectHideFlags: 0
@@ -62486,6 +62502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132843397}
   - component: {fileID: 2132843398}
+  - component: {fileID: 2132843399}
   m_Layer: 0
   m_Name: EndTrigger
   m_TagString: Untagged
@@ -62538,11 +62555,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.065340996, y: -0.43647718}
+  m_Offset: {x: 0.065340996, y: 0.016917706}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -62552,8 +62569,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.3961353, y: 0.12704563}
+  m_Size: {x: 5.3961353, y: 0.23531818}
   m_EdgeRadius: 0
+--- !u!114 &2132843399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132843396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b401afb1348dc4785981971eeb595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 1423088244}
 --- !u!1 &2134216692
 GameObject:
   m_ObjectHideFlags: 0
@@ -62962,11 +62992,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2178652504025340852, guid: 9a48076d38111d649aca469d982f063e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.53
+      value: -7.574
       objectReference: {fileID: 0}
     - target: {fileID: 2178652504025340852, guid: 9a48076d38111d649aca469d982f063e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.99
+      value: 7.893
       objectReference: {fileID: 0}
     - target: {fileID: 2178652504025340852, guid: 9a48076d38111d649aca469d982f063e, type: 3}
       propertyPath: m_LocalPosition.z

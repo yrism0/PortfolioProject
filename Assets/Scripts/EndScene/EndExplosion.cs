@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndExplosion : MonoBehaviour
 {
@@ -32,8 +33,12 @@ public class EndExplosion : MonoBehaviour
         {
             transform.localScale = Vector3.Lerp(startScale, scale, elapsed / duration);
             elapsed += Time.deltaTime;
+            
             yield return null;
+            
         }
+        //yield return new WaitForSeconds(4);
+        //SceneManager.LoadScene("EndScene");
         transform.localScale = scale;
     }
 }

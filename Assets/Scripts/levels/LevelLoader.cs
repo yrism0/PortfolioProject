@@ -1,3 +1,4 @@
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class LevelLoader : MonoBehaviour
     public string level4 = "Level 4";
     public string level5 = "Level 5";
     public string mainMenu = "Main Menu";
+    public string endScene = "EndScene";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -56,6 +58,12 @@ public class LevelLoader : MonoBehaviour
     public void StartMainMenu()
     {
         SceneManager.LoadScene(mainMenu);
+        Time.timeScale = 1f;
+    }
+
+    public void StartEndScene()
+    {
+        SceneManager.LoadScene(endScene);
         Time.timeScale = 1f;
     }
 }
