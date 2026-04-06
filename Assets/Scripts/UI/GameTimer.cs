@@ -11,9 +11,11 @@ public class GameTimer : MonoBehaviour
 
     private float gameTimer;
     private float finalGameTime;
+    
     [SerializeField] private Text timerText;
     [SerializeField] private Text finalTimerText;
     [SerializeField] private Text deathTimerText;
+   
 
 
 
@@ -83,6 +85,8 @@ public class GameTimer : MonoBehaviour
             
         }
         
-    }
+    }   
+
+    
 
 }
