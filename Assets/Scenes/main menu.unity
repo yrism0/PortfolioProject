@@ -7450,7 +7450,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MURRON DONALDSON: UI DESIGN'
+  m_Text: 'MURRON DONALDSON: UI DESIGN, MINI-MAP'
 --- !u!222 &2078681934
 CanvasRenderer:
   m_ObjectHideFlags: 0
