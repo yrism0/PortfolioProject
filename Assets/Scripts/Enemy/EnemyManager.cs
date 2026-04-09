@@ -90,7 +90,7 @@ public class EnemyManager : MonoBehaviour
                 Die();
             }
         }
-        else if (eHealth <= 0)
+        else if (eHealth <= 0) 
         {
             Die();
         }
@@ -187,6 +187,7 @@ public class EnemyManager : MonoBehaviour
         rotateSpeed = 0f;
         enemySpawn.enemiesSpawned--;
         agent.enabled = false;
+        AudioControl.Instance.Play(AudioControl.SoundType.EnemyDie);
     }
 
 }

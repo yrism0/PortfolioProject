@@ -67,7 +67,7 @@ public class doorControl : MonoBehaviour
         isOpen = true;
         Debug.Log("Door Opens");
 
-        for (int i = 0; i < animator.Length; i++)
+        for (int i = 0; i < animator.Length; i++) 
         {
             animator[i].SetBool("DoorLocked", false);
         }
@@ -76,7 +76,7 @@ public class doorControl : MonoBehaviour
             doorCollision[i].enabled = false;
         }
         
-        
+        AudioControl.Instance.Play(AudioControl.SoundType.DoorOpen);
 
     }
 }

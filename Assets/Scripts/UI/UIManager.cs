@@ -65,11 +65,13 @@ public class UIManager : MonoBehaviour
             if (isPaused == false)
             {
                 PauseGame();
+                AudioControl.Instance.Play(AudioControl.SoundType.MenuOpen);
 
             }
             else if (isPaused == true)
             {
                 ResumeGame();
+                AudioControl.Instance.Play(AudioControl.SoundType.MenuClose);
             }
         }
     }

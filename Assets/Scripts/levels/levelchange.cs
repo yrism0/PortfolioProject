@@ -37,6 +37,7 @@ public class levelchange : MonoBehaviour
             StartCoroutine(EndSequence()); 
             float elapsedTime = Timer.ElapsedTime; // Access the elapsed time from the GameTimer script
             string grade = CalculateGrade(elapsedTime).ToString(); // Calculate the grade based on the elapsed time
+            AudioControl.Instance.Play(AudioControl.SoundType.Portal); // Play portal sound effect
         }
     }
 
@@ -67,6 +68,7 @@ public class levelchange : MonoBehaviour
         PlayerHealth.instance.DisablePlayerMovement();
         yield return new WaitForSeconds(1);
         Manager.Endresults();
+
     }
 
     private void HidePlayer()

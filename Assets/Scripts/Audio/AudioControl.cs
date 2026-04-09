@@ -12,6 +12,8 @@ public class AudioControl : MonoBehaviour
 
     public AudioMixer masterMixer;
     public Slider masterSlider;
+    public AudioClip backgroundMusic; 
+    public AudioSource musicSource;
     float savedVol;
 
     public void SetVolume(float sliderVolume)
@@ -22,6 +24,11 @@ public class AudioControl : MonoBehaviour
 
     void Start()
     {
+        musicSource.clip = backgroundMusic; // Sets the background music to the audio source
+        musicSource.loop = true; // Loops the background music
+        musicSource.Play(); // Plays the background music on start
+
+
         masterSlider.value = PlayerPrefs.GetFloat("Volume", savedVol); // Attempts to set the volume to the saved volume on start - was unable to get it working in time
         masterMixer.SetFloat("MasterVolume", masterSlider.value);    // Attempts to save the volume to carry between scenes - was unable to get it working in time
     }
@@ -32,13 +39,17 @@ public class AudioControl : MonoBehaviour
         // These are left overs from my last game, each relates to an action, so we just make a soundtype for everything we need - SS
         // When calling these use example below which called the jump sound.
         // AudioControl.Instance.Play(AudioControl.SoundType.Jump);    
-        Jump,
-        Die,
-        Checkpoint,
-        Collect,
+        Movement,
+        DoorOpen,
+        PlayerDie,
+        EnemyDie,
+        PlayerShot1,
+        PlayerShot2,
         Portal,
-        Platform,
-        achievement
+        MenuOpen,
+        MenuClose,
+        BackgroundMusic,
+        MenuButton
     }
 
     [System.Serializable]

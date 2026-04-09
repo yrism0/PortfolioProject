@@ -82,20 +82,22 @@ namespace TopDown.Shooting
 
                 GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation, null);
                 bullet.GetComponent<Projectile>().ShootBullet(firepoint);
+                AudioControl.Instance.Play(AudioControl.SoundType.PlayerShot1);
 
                 muzzleFlashAnimator.SetTrigger("shoot");
                 cooldownTimer = 0;
             }
-            else if (!defaultState && UIManager.Instance.isPaused == false && !PlayerHealth.instance.isPlayerDead)
+            else if (!defaultState && UIManager.Instance.isPaused == false && !PlayerHealth.instance.isPlayerDead) 
             {
                 //GameObject sBullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
                 //sBullet.GetComponent<Projectile>().ShootBullet(sFirepoint);
 
                 if (cooldownTimer < cooldown) return;
 
-                GameObject bullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null);
+                GameObject bullet = Instantiate(sBulletPrefab, sFirepoint.position, sFirepoint.rotation, null); 
                 bullet.GetComponent<Projectile>().ShootBullet(sFirepoint);
                 shotsLeft--;
+                AudioControl.Instance.Play(AudioControl.SoundType.PlayerShot2);
 
                 muzzleFlashAnimatorS.SetTrigger("shoot");
                 cooldownTimer = 0;
