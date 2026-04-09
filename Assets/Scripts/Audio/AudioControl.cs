@@ -12,25 +12,45 @@ public class AudioControl : MonoBehaviour
 
     public AudioMixer masterMixer;
     public Slider masterSlider;
+    public Slider musicSlider;
     public AudioClip backgroundMusic; 
     public AudioSource musicSource;
     float savedVol;
 
-    public void SetVolume(float sliderVolume)
+    public void SetSFXVolume(float sliderVolume)
     {
-        masterMixer.SetFloat("MasterVolume", masterSlider.value);
-        PlayerPrefs.SetFloat("Volume", savedVol); // Attempts to save the volume to carry between scenes - was unable to get it working in time
+        float sfxvolume = masterSlider.value;
+         masterMixer.SetFloat("SFX", Mathf.Log10(sfxvolume) * 20);
+        
+        PlayerPrefs.SetFloat("Volume", masterSlider.value); // Attempts to save the volume to carry between scenes - was unable to get it working in time
     }
+    public void SetmusicVolume(float sliderVolume)
+    {
+        float musicVolume = musicSlider.value;
+        masterMixer.SetFloat("Music", Mathf.Log10(musicVolume) * 20);
+
+       // PlayerPrefs.SetFloat("Musicvolume", savedVol); // Attempts to save the volume to carry between scenes - was unable to get it working in time
+    }
+
+
 
     void Start()
     {
-        musicSource.clip = backgroundMusic; // Sets the background music to the audio source
-        musicSource.loop = true; // Loops the background music
-        musicSource.Play(); // Plays the background music on start
+        PlayMusic();
+
+        
 
 
-        masterSlider.value = PlayerPrefs.GetFloat("Volume", savedVol); // Attempts to set the volume to the saved volume on start - was unable to get it working in time
-        masterMixer.SetFloat("MasterVolume", masterSlider.value);    // Attempts to save the volume to carry between scenes - was unable to get it working in time
+       // masterSlider.value = PlayerPrefs.GetFloat("Volume", savedVol); // Attempts to set the volume to the saved volume on start - was unable to get it working in time
+        masterMixer.SetFloat("SFXVolume", masterSlider.value);
+        masterMixer.SetFloat("MusicVolume", musicSlider.value);// Attempts to save the volume to carry between scenes - was unable to get it working in time
+    }
+
+    public void PlayMusic()
+    {
+        musicSource.clip = backgroundMusic;
+        musicSource.loop = true;
+        musicSource.Play();
     }
 
     // Enum 
@@ -104,7 +124,7 @@ public class AudioControl : MonoBehaviour
         // Bases the sound that is create on the selected audio clip and volume set in the unity engine
         audioSrc.clip = s.Clip;
         audioSrc.volume = s.Volume;
-        audioSrc.outputAudioMixerGroup = masterMixer.FindMatchingGroups("Master")[0];
+        audioSrc.outputAudioMixerGroup = masterMixer.FindMatchingGroups("SFX")[0];
 
         audioSrc.Play();
 

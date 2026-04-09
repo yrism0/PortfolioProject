@@ -6,6 +6,10 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject credits;
     [SerializeField] private Animator camAnim;
     [SerializeField] private GameObject slFX;
+    public GameObject options;
+    public GameObject controlstab;
+    public GameObject audiotab;
+    public GameObject backbutton;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +27,7 @@ public class MenuManager : MonoBehaviour
     {
         menu.SetActive(false);
         credits.SetActive(true);
+        AudioControl.Instance.Play(AudioControl.SoundType.MenuButton);
     }
 
     public void ShowMenu()
@@ -36,5 +41,36 @@ public class MenuManager : MonoBehaviour
         slFX.SetActive(true);
         menu.SetActive(false);
         camAnim.SetTrigger("Start");
+        AudioControl.Instance.Play(AudioControl.SoundType.MenuButton);
+    }
+
+    public void ShowOptions()
+    {
+        options.SetActive(true);
+        AudioControl.Instance.Play(AudioControl.SoundType.MenuButton);
+        // menu.SetActive(false);
+    }
+
+    public void ShowControls()
+    {
+        controlstab.SetActive(true);
+        audiotab.SetActive(false);
+        AudioControl.Instance.Play(AudioControl.SoundType.MenuButton);
+    }
+
+    public void ShowAudio()
+    {
+        controlstab.SetActive(false);
+        audiotab.SetActive(true);
+        AudioControl.Instance.Play(AudioControl.SoundType.MenuButton);
+
+    }
+    public void backtomenu()
+    {
+        options.SetActive(false);
+        controlstab.SetActive(false);
+        audiotab.SetActive(false);
+        menu.SetActive(true);
+        AudioControl.Instance.Play(AudioControl.SoundType.MenuButton);
     }
 }
