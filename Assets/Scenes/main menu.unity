@@ -2896,8 +2896,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'SAM SPEIRS: SPRITES, ANIMATIONS, 3D MODELS, PLAYER SCRIPTS, POWER-UPS,
-    ENEMY SCRIPTS, BLOOD SPLATTER SYSTEM, LEVEL DESIGN, UI, CAMERA SYSTEMS, CINEMATIC
-    SEQUENCES.'
+    ENEMY SCRIPTS, BLOOD SPLATTER SYSTEM, AUDIO SCRIPTS, LEVEL DESIGN, UI, CAMERA
+    SYSTEMS, CINEMATIC SEQUENCES'
 --- !u!222 &674516698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8071,7 +8071,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MARC BLAIR: NAVMESH, DOOR CONTROLS, AUDIO, POWER-UPS'
+  m_Text: 'MARC BLAIR: NAVMESH, DOOR CONTROLS, POWER-UPS, SOUNDS'
 --- !u!222 &1996689220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8414,7 +8414,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MURRON DONALDSON: UI DESIGN, MINI-MAP'
+  m_Text: 'MURRON DONALDSON: UI DESIGN, MINI-MAP, AUDIO SYSTEMS, SOUNDS'
 --- !u!222 &2078681934
 CanvasRenderer:
   m_ObjectHideFlags: 0
