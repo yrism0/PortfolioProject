@@ -24735,7 +24735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f59b4f8b5c1684ca5bc1916135fa2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 90
+  movementSpeed: 100
 --- !u!50 &841300860
 Rigidbody2D:
   serializedVersion: 5
@@ -36189,6 +36189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   masterMixer: {fileID: 24100000, guid: 16845a9c1c0b0894ba03e229d16b3730, type: 2}
   masterSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
   backgroundMusic: {fileID: 8300000, guid: 0256e9a2de5fd6e44ad704004e81908d, type: 3}
   musicSource: {fileID: 1039533764}
   AllSounds:
